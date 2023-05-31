@@ -1,9 +1,4 @@
-//importing the partial scss file: _base.scss
-// @use "base";
-// You need the base only when you are not using bootstrap. In that case, go to _base.scss
-// to customize it as you may want.
-
-//importing the partial scss file: _variables.scss
+@use "base";
 @use "variables";
 
 //importing bootstrap
@@ -13,4 +8,18 @@
 
 h1 {
   color: tomato;
+}
+
+li {
+  list-style-type: none;
+  padding-right: 5px;
+}
+
+ul {
+  display: flex;
+  justify-content: right;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
 }
