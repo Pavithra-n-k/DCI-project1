@@ -1,10 +1,6 @@
 @use "base";
 @use "variables";
 
-//importing bootstrap
-@import "../../node_modules/bootstrap/scss/bootstrap";
-
-// Write your sass code here or import partials
 
 h1 {
   color: tomato;
@@ -23,3 +19,27 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
+.cards-wrapper {
+  display: flex;
+ 
+}
+
+.card{
+  margin: 0.5em;
+  width: calc(100%/3);
+}
+
+.image-wrapper {
+  height: 10vw;
+  margin: 0 auto;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15%;
+    
+  
+  }
+}
+
