@@ -31,7 +31,6 @@ nav img {
   left: 3%;
 }
 
-
 nav ul {
   float: right;
   margin-right: 25px;
@@ -158,19 +157,44 @@ label {
   display: none;
 }
 
-a{
+// FOOTER
+
+a {
   color: white;
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 
-.footer-logo{
+.footer-logo {
   height: 200px;
 }
 
-footer{
+footer {
   font-size: 20;
 }
+
+.Competition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  width: 700px;
+  background-image: url(/DCI-project1/image/WIN!\ WIN!\ WIN!.png);
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.comp-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 900px;
+  width: 900px;
+  background-color: #9b4922;
+  border-radius: 30px;
+}
+
