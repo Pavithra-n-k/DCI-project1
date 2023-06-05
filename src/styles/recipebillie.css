@@ -10,6 +10,24 @@ body {
     grid-template-columns: 10vw auto 10vw;
     grid-template-rows: auto auto auto auto;
   }
+
+  .main-nav{
+    background-color: #C88A36;
+  }
+  
+  .logo-img{
+  height: 100px;
+  padding: 10px;
+  position: fixed;
+  }
+  
+  
+  .page-header{
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 150px;
+  }
   header {
     grid-area: header;
     z-index: 1000;

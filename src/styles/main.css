@@ -145,9 +145,6 @@ label {
   max-width: 100%;
   max-height: 100%;
   border-radius: 15%;
-<<<<<<< HEAD
-}/*# sourceMappingURL=main.css.map */
-=======
 }
 
 .search-container {
@@ -159,5 +156,21 @@ label {
   display: none;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footer-logo {
+  height: 200px;
+}
+
+footer {
+  font-size: 20;
+}
+
 /*# sourceMappingURL=main.css.map */
->>>>>>> main
