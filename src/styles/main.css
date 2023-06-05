@@ -199,48 +199,6 @@ p {
   margin: 30px 0;
 }
 
-<<<<<<< HEAD
-a {
-  color: white;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.footer-logo {
-  height: 200px;
-}
-
-footer {
-  font-size: 20;
-}
-
-.Competition {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 700px;
-  width: 700px;
-  background-image: url(/DCI-project1/image/WIN!\ WIN!\ WIN!.png);
-  background-repeat: no-repeat;
-  border-radius: 30px;
-}
-
-.comp-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 900px;
-  width: 900px;
-  background-color: #9b4922;
-  border-radius: 30px;
-}
-
-/*# sourceMappingURL=main.css.map */
-=======
 .banner-content {
   width: 50%;
   display: flex;
@@ -264,4 +222,3 @@ footer {
   color: black;
   background-color: #ffad3a;
 }
->>>>>>> 4caba3b0d83c73909d8a440bd05362125a599c81
