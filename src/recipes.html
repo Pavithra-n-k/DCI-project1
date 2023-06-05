@@ -20,38 +20,22 @@
   </head>
   <body>
     <header>
-      <nav class="main-nav">
-        <div><img class="logo-img" src="../image/logo2.png" alt="logo"></div>
-        <div>
+      <header>
+        <img class="logo-img" src="../image/logo.png" alt="" />
+        <nav class="main-nav">
+          <input type="checkbox" id="check" />
+          <label for="check">
+            <i class="fa-solid fa-bars" id="btn"></i>
+          </label>
           <ul>
-            <li>Home</li>
-            <li>Recipes</li>
-            <li>About</li>
-            <li>contact</li>
-            <li>
-              <div class="search-container">
-                <input type="text" placeholder="Search" />
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
-            </li>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contacts.html">contact</a></li>
           </ul>
-        </div>
-        <section>
-          <div>
-            <a href=""><i class="fa-solid fa-bars"></i></a>
-            <ul>
-              <li>Home</li>
-              <li>Recipes</li>
-              <li>About</li>
-              <li>contact</li>
-              <li>
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </nav>
-    
+        </nav>
+      </header>
+
       <section>
         <h1 class="sub-text">Recipe Website</h1>
         <button>Click me!</button>
@@ -64,10 +48,9 @@
         <div><img src="../image/WORLD FOOD (3).png" alt="food map" /></div>
       </section>
 
-      <section >
+      <section>
         <div class="content">
-        
-          <br>
+          <br />
           <p>
             Embarking on a culinary adventure around the world through
             international food is an exciting experience. <br /><br />
@@ -91,7 +74,8 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="flags"
+                <img
+                  class="flags"
                   src="../image/turkishflag.png"
                   alt="turkish flag"
                   style="width: 498px; height: 400px"
@@ -117,7 +101,8 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="flags"
+                <img
+                  class="flags"
                   src="../image/ukrainianflag.jpg.jpg"
                   alt="ukrainian flag"
                   style="width: 498px; height: 400px"
@@ -134,7 +119,7 @@
                   ingredients like mushrooms, dill, and sour cream, adding a
                   unique and delightful touch to traditional Ukrainian meals.
                 </p>
-                <a href="#">UKRAINAN RECIPES</a>
+                <a href="recipeilia.html">UKRAINAN RECIPES</a>
               </div>
             </div>
           </div>
@@ -143,7 +128,8 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="flags"
+                <img
+                  class="flags"
                   src="../image/indianflag.jpg"
                   alt="indian flag"
                   style="width: 498px; height: 400px"
@@ -168,7 +154,8 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="flags"
+                <img
+                  class="flags"
                   src="../image/rwandanflag.png"
                   alt="Rwandan flag"
                   style="width: 498px; height: 400px"
@@ -195,7 +182,8 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="flags"
+                <img
+                  class="flags"
                   src="../image/jamaicanflag.png"
                   alt="jamaican flag"
                   style="width: 500px; height: 400px"
@@ -203,14 +191,14 @@
                 <h1 class="card-title">Jamaica</h1>
               </div>
               <div class="flip-card-back">
-                 <p class="card-rev-text">
+                <p class="card-rev-text">
                   Jamaican cuisine is a flavorful fusion of influences from
                   Africa, Europe, and Asia, resulting in a vibrant culinary
                   heritage. Traditional Jamaican foods include jerk chicken, a
                   spicy and smoky grilled chicken marinated in a combination of
                   scotch bonnet peppers, allspice, thyme, and other seasonings.
-                  For beverages, Jamaican rum is renowned worldwide,
-                  with popular brands like Appleton Estate.
+                  For beverages, Jamaican rum is renowned worldwide, with
+                  popular brands like Appleton Estate.
                 </p>
                 <a href="#">JAMAICAN RECIPES</a>
               </div>
@@ -220,28 +208,110 @@
       </div>
     </section>
 
-    <button class="open-button" onclick="openForm()">CHAT TO ONE OF OUR TEAM</button>
+    <button class="open-button" onclick="openForm()">
+      CHAT TO ONE OF OUR TEAM
+    </button>
 
-<div class="chat-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h1 class="chat-head">Chat</h1>
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1 class="chat-head">Chat</h1>
 
-    <label for="msg"><b>How can we help you?</b></label>
-    <textarea placeholder="Type message.." name="msg" required></textarea>
+        <label for="msg"><b>How can we help you?</b></label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
 
-    <button type="submit" class="btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">
+          Close
+        </button>
+      </form>
+    </div>
 
-<script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-</script>
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+
+    <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: #c88a36"
+    >
+      <div class="container p-4 pb-0">
+        <section class="">
+          <div class="row">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">
+                The Recipe Box
+              </h6>
+              <img class="footer-logo" src="../image/logo.png" alt="logo">
+            </div>
+            <hr class="w-100 clearfix d-md-none" />
+            <hr class="w-100 clearfix d-md-none" />
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+              
+                <a href="recipes.html">Recipes</a>
+                <a href="">Competiton</a> <br>
+                <a href="about.html">About</a> <br>
+                <a href="contacts.html">Contact</a>
+            </div>
+            <hr class="w-100 clearfix d-md-none" />
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p>
+                <i class="fas fa-home mr-3"></i> 145 Topfstrasse, <br />
+                Berlin 13867
+              </p>
+              <p><i class="fas fa-envelope mr-3"></i> <a href="mailto:info@recipe-box.com">info@recipe-box.com</a></p>
+              <p><i class="fas fa-phone mr-3"></i> <a href=""></a> + (49) 153 42676897</p>
+            </div>
+          </div>
+        </section>
+        <hr class="my-3" />
+        <section class="p-3 pt-0">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-7 col-lg-8 text-center text-md-start">
+              <div class="p-3">
+                © 2023 Copyright:
+                <a class="text-white" href="https://TheReceipeBox.com/"
+                  >TheReceipeBox.com</a
+                >
+              </div>
+            </div>
+            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                role="button"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                role="button"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                role="button"
+                ><i class="fab fa-google"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                role="button"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>

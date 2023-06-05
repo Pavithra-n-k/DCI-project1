@@ -5,20 +5,19 @@
 }
 
 body{
-  background-color: #C88A36;
+ background-color: #9B4922;
   color: white;
   font-family: 'Comfortaa', cursive;
 }
 
 .main-nav{
-  background-color: #9B4922;
+  background-color: #C88A36;
 }
 
 .logo-img{
-  height: 170px;
-  margin: 20px;
- 
-  border-radius: 50%;
+height: 100px;
+padding: 10px;
+position: fixed;
 }
 .page-header{
   color: white;
@@ -54,6 +53,7 @@ p {
   width: 80vw;
   margin-left: 5vw;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .item {
@@ -118,13 +118,13 @@ p {
 }
 
 .flip-card-front {
-  background-color:  #9B4922;
+  background-color:   #C88A36;
   color: rgb(255, 255, 255);
   border-radius: 30px;
 }
 
 .flip-card-back {
-  background-color:  #9B4922;
+  background-color:  #C88A36;
   color: white;
   border-radius: 30px;
   transform: rotateY(180deg);
@@ -148,7 +148,7 @@ p {
 a{
  text-decoration: none;
  color: white;
- font-size: 40px;
+ font-size: 20px;
 }
 
 a:hover{
@@ -231,4 +231,8 @@ b{
 }
 ::placeholder{
   color: white;
+}
+
+.footer-logo{
+  height: 200px;
 }
