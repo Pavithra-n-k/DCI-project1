@@ -19,16 +19,22 @@ height: 100px;
 padding: 10px;
 position: fixed;
 }
+
+
 .page-header{
   color: white;
   text-align: center;
   font-size: 60px;
-  margin-bottom: 40px;
+  margin-top: 150px;
 }
 .map-image{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.food-globe{
+  border-radius: 50%;
 }
 
 .content {
@@ -158,10 +164,10 @@ a:hover{
 
 .open-button {
   background-color: #9B4922;
+  border:3px solid  #C88A36;
   color: white;
   padding: 16px 20px;
   border-radius: 15px;
-  border: none;
   cursor: pointer;
   position: fixed;
   bottom: 15px;
