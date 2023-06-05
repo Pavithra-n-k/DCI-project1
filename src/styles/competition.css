@@ -13,28 +13,67 @@
   }
   .container1 {
     margin: auto;
+
+  }
+  .section1 {
+    margin: auto;
     height: 70vh;
     width: 90%;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: 20% auto auto;
+    grid-template-areas: 
+    ". container0 ."
+    "book1 maincontainer book3"
+    "book2 maincontainer book4";
+    gap: 10px;
+    margin-bottom: 150px;
+  }
+  .book1 {
+    background-color: red;
+    grid-area: book1;
+   border-radius: 10px;
+  }
+  .book2 {
+    background-color: red;
+    grid-area: book2;
+    border-radius: 10px;
+  }
+  .book3 {
+    background-color: red;
+    grid-area: book3;
+    border-radius: 10px;
+  }
+  .book4 {
+    background-color: red;
+    grid-area: book4;
+    border-radius: 10px;
   }
   .maincontainer {
-    margin-top: 60px;
+    margin-top: 120px;
     position: absolute;
-    width: 80%;
-    height: 50vh;
+    width: 50%;
+    height: 60vh;
     background: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    grid-area: maincontainer;
   }
   .main-img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    flex-grow: 1;
   }
   .container0 {
     height: 10vh;
     display: grid;
     place-items: center;
+    grid-area: container0;
   }
   .container2 {
     border: 1px solid black;
@@ -56,7 +95,6 @@
     overflow: hidden;
     background: #ffc728;
     color: #000;
-    
   }
   .back {
     position: absolute;
@@ -73,7 +111,6 @@
     transform: rotateY(180deg);
   }
   .front, .back {
-    padding: 30px;
     font-weight: bold;
     font-size: 24px;
     text-align: center;
