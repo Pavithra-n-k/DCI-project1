@@ -34,17 +34,15 @@
    border-radius: 10px;
   }
   .book2 {
-    background-color: red;
     grid-area: book2;
     border-radius: 10px;
   }
   .book3 {
-    background-color: red;
     grid-area: book3;
     border-radius: 10px;
   }
   .book4 {
-    background-color: red;
+
     grid-area: book4;
     border-radius: 10px;
   }
@@ -72,7 +70,7 @@
     grid-area: container0;
   }
   .container2 {
-    border: 1px solid black;
+    border: 1px solid lightgrey;
     height: 40vh;
     width: 90%;
     margin: auto;
@@ -129,6 +127,7 @@
     display: grid;
     place-items: center;
     height: 16vh;
+    border: 1px solid black;
   }
   .cards-wrapper {
     display: flex;
@@ -137,14 +136,70 @@
   .card {
     margin: 0.5em;
     width: 33.3333333333%;
+    height: 10vh;
   }
   
   .image-wrapper {
-    height: 10vw;
+    height: 100%;
     margin: 0 auto;
   }
   .image-wrapper img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 35vh;
     border-radius: 15%;
   }
+  .section-marquee {
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 10vh;
+    display: grid;
+    place-items: center;
+  }
+  .contact {
+    margin-top: 80px;
+    padding: 10px;
+  }
+  th, td {
+    padding: .5rem;
+    text-align: center;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: rgba(245, 238, 220, 0.438);
+}
+.contact h2 {
+  margin-bottom: 50px;
+}
+
+form h4, h3 {
+    margin: 0.3rem 0 0.2rem 0;
+}
+
+input, textarea, .submit-btn {
+    padding: .5rem;
+    border: 1px solid rgba(128, 128, 128, 0.65);
+}
+input {
+  width: 100%;
+}
+textarea {
+  width: 100%;
+  color: gray;
+}
+
+.submit-btn {
+    width: 10rem;
+    margin-top: 0.5rem;
+    background: none;
+    border-radius: 10px;
+}
+
+.submit-btn:hover {
+  background-color: rgb(174, 227, 248);
+}
+.submit-btn:active {
+  box-shadow: 10px 10px 20px rgb(255, 255, 255);
+}
+
