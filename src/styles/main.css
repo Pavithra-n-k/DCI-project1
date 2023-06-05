@@ -11,6 +11,10 @@
   text-decoration: none;
 }
 
+:root {
+  font-size: 16px;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -117,36 +121,12 @@ label {
   #check:checked ~ label #btn {
     display: block;
   }
-  .cards-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    min-height: 200px;
-  }
-  .card {
-    width: 90%;
-    margin: 10px;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15%;
   }
 }
-.cards-wrapper {
-  display: flex;
-}
-
-.card {
-  margin: 0.5em;
-  width: 33.3333333333%;
-}
-
-.image-wrapper {
-  height: 10vw;
-  margin: 0 auto;
-}
-.image-wrapper img {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 15%;
-}
-
 .search-container {
   height: 25px;
   width: 200px;
@@ -154,6 +134,87 @@ label {
 
 #check {
   display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: auto;
+  height: 500px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+h2 {
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+}
+
+.main-banner {
+  background-color: rgb(231, 216, 206);
+  background-image: url(../../image/Blog-september.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content h1 {
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  font-weight: 200;
+}
+
+.banner-content p {
+  color: rgb(255, 255, 255);
+  font-size: medium;
+  font-weight: 400;
+  margin: 30px 0;
+}
+
+.banner-content {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-banner a {
+  border: 2px solid #c88a36;
+  border-radius: 6px;
+  background-color: #c88a36;
+  width: fit-content;
+  padding: 5px 20px;
+  color: white;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.main-banner a:hover {
+  color: black;
+  background-color: #ffad3a;
 }
 
 /*# sourceMappingURL=main.css.map */
