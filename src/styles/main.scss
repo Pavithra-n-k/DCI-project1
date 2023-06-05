@@ -7,6 +7,10 @@
   list-style-type: none;
   text-decoration: none;
 }
+:root {
+  font-size: 16px;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -117,31 +121,31 @@ label {
   #check:checked ~ label #btn {
     display: block;
   }
-  .cards-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    min-height: 200px;
-  }
+  //   .cards-wrapper {
+  //     display: flex;
+  //     flex-wrap: wrap;
+  //     justify-content: center;
+  //     min-height: 200px;
+  //   }
 
-  .card {
-    width: 90%;
-    margin: 10px;
-  }
-}
+  //   .card {
+  //     width: 90%;
+  //     margin: 10px;
+  //   }
+  // }
 
-.cards-wrapper {
-  display: flex;
-}
+  // .cards-wrapper {
+  //   display: flex;
+  // }
 
-.card {
-  margin: 0.5em;
-  width: calc(100% / 3);
-}
+  // .card {
+  //   margin: 0.5em;
+  //   width: calc(100% / 3);
+  // }
 
-.image-wrapper {
-  height: 10vw;
-  margin: 0 auto;
+  // .image-wrapper {
+  //   height: 10vw;
+  //   margin: 0 auto;
 
   img {
     max-width: 100%;
