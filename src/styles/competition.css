@@ -21,7 +21,7 @@
     width: 90%;
     display: grid;
     grid-template-columns: 20% auto 20%;
-    grid-template-rows: 20% auto auto;
+    grid-template-rows: 20% 38% 38%;
     grid-template-areas: 
     ". container0 ."
     "book1 maincontainer book3"
@@ -30,7 +30,6 @@
     margin-bottom: 150px;
   }
   .book1 {
-    background-color: red;
     grid-area: book1;
    border-radius: 10px;
   }
@@ -64,10 +63,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    display: flex;
-    flex-wrap: wrap;
-    flex-shrink: 1;
-    flex-grow: 1;
+    border-radius: 10px;
   }
   .container0 {
     height: 10vh;
