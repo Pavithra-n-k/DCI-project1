@@ -14,29 +14,48 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-   
-    <!-- <link rel="stylesheet" href="styles/main.scss" /> -->
-    <link rel="stylesheet" href="styles/recipes.scss">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
       <nav class="main-nav">
-        <img src="../image/logo.png" alt="" />
-        <input type="checkbox" checked="false" id="check" />
-        <label for="check">
-          <i class="fa-solid fa-bars" id="btn"></i>
-        </label>
-        <ul>
-          <li><a href="#"> Home</a></li>
-          <li><a href="#">Recipes</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">contact</a></li>
-          <!-- <li class="search-container">
-          <input type="text" placeholder="Search" class="search-container" />
-        </li> -->
-        </ul>
+        <div><img class="logo-img" src="../image/logo2.png" alt="logo"></div>
+        <div>
+          <ul>
+            <li>Home</li>
+            <li>Recipes</li>
+            <li>About</li>
+            <li>contact</li>
+            <li>
+              <div class="search-container">
+                <input type="text" placeholder="Search" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <section>
+          <div>
+            <a href=""><i class="fa-solid fa-bars"></i></a>
+            <ul>
+              <li>Home</li>
+              <li>Recipes</li>
+              <li>About</li>
+              <li>contact</li>
+              <li>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </li>
+            </ul>
+          </div>
+        </section>
       </nav>
+    
+      <section>
+        <h1 class="sub-text">Recipe Website</h1>
+        <button>Click me!</button>
+      </section>
     </header>
     <main>
       <h1 class="page-header">INTERNATIONAL RECIPES</h1>
@@ -201,9 +220,7 @@
       </div>
     </section>
 
-    <button class="open-button" onclick="openForm()">CHAT TO ONE OF OUR TEAM</button>footer{
-      position: fixed;
-    }
+    <button class="open-button" onclick="openForm()">CHAT TO ONE OF OUR TEAM</button>
 
 <div class="chat-popup" id="myForm">
   <form action="/action_page.php" class="form-container">

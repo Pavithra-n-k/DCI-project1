@@ -5,26 +5,27 @@
 }
 
 body{
-  background-color: #C88A36;
+ background-color: #9B4922;
   color: white;
   font-family: 'Comfortaa', cursive;
 }
 
 .main-nav{
-  background-color: #9B4922;
+  background-color: #C88A36;
 }
 
 .logo-img{
-  height: 170px;
-  margin: 20px;
- 
-  border-radius: 50%;
+height: 100px;
+padding: 10px;
+position: fixed;
 }
+
+
 .page-header{
   color: white;
   text-align: center;
   font-size: 60px;
-  margin-bottom: 40px;
+  margin-top: 150px;
 }
 .map-image{
   display: flex;
@@ -32,9 +33,16 @@ body{
   justify-content: center;
 }
 
+.food-globe{
+  border-radius: 50%;
+}
+
 .content {
 text-align: center;
 padding: 100px;
+margin-left: 200px;
+margin-right: 200px;
+margin-bottom: 100px;
 }
 
 .card-header{
@@ -54,6 +62,7 @@ p {
   width: 80vw;
   margin-left: 5vw;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .item {
@@ -118,13 +127,13 @@ p {
 }
 
 .flip-card-front {
-  background-color:  #9B4922;
+  background-color:   #C88A36;
   color: rgb(255, 255, 255);
   border-radius: 30px;
 }
 
 .flip-card-back {
-  background-color:  #9B4922;
+  background-color:  #C88A36;
   color: white;
   border-radius: 30px;
   transform: rotateY(180deg);
@@ -148,7 +157,7 @@ p {
 a{
  text-decoration: none;
  color: white;
- font-size: 40px;
+ font-size: 20px;
 }
 
 a:hover{
@@ -158,15 +167,16 @@ a:hover{
 
 .open-button {
   background-color: #9B4922;
+  border:3px solid  #C88A36;
   color: white;
   padding: 16px 20px;
   border-radius: 15px;
-  border: none;
   cursor: pointer;
   position: fixed;
   bottom: 15px;
   right: 20px;
-  width: 280px;
+  width: 300px;
+  height:80px;
 }
 
 .chat-popup {
@@ -231,4 +241,8 @@ b{
 }
 ::placeholder{
   color: white;
+}
+
+.footer-logo{
+  height: 200px;
 }
