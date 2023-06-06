@@ -46,6 +46,10 @@
     grid-area: book4;
     border-radius: 10px;
   }
+  footer {
+    height: 35vh;
+  }
+
   .maincontainer {
     margin-top: 120px;
     position: absolute;
@@ -123,12 +127,7 @@
   .thecard:hover{
     transform: rotateY(180deg);
     }
-  footer {
-    display: grid;
-    place-items: center;
-    height: 16vh;
-    border: 1px solid black;
-  }
+ 
   .cards-wrapper {
     display: flex;
   }
