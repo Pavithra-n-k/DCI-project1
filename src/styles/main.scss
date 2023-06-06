@@ -1,7 +1,7 @@
 @use "base";
 @use "variables";
 @use "recipes";
-
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +27,7 @@ main {
 nav {
   height: 100px;
   background: url(../../image/nav-bg.jpg);
+  font-family: "Cherry Bomb One", cursive;
 }
 nav img {
   height: 100px;
@@ -55,7 +56,7 @@ nav div {
 nav ul li a {
   position: relative;
   color: white;
-  font-size: 18px;
+  font-size: 25px;
   padding: 5px 0;
   text-transform: capitalize;
 }
@@ -214,5 +215,8 @@ p {
   background-color: #ffad3a;
 }
 body {
-  background: url(../../image/Body-bg.jpg);
+  background: url(../../image/Pages-pg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
