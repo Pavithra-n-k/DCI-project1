@@ -1,24 +1,24 @@
 
-main {
-    background-color: aqua;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 main h1 {
     text-align: center;
     font-size: 100px;
-
 }
 
 .imageAboutSection{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-img {
-    width: 50%;
-  
-    height: 600px;
-    
+.aboutImage {
+    width: 700px;
+    height: 700px;
   
 }
 
@@ -58,13 +58,4 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-
-
-
-footer {
-    margin-top: 40px;
-    border:2px solid red;
-    padding: 50px;
 }
