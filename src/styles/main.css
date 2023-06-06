@@ -1,6 +1,8 @@
-@use "base";
-@use "variables";
-@use "recipes";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 * {
   margin: 0;
@@ -8,6 +10,7 @@
   list-style-type: none;
   text-decoration: none;
 }
+
 :root {
   font-size: 16px;
 }
@@ -23,6 +26,7 @@ header {
 main {
   margin-top: 100px;
 }
+
 nav {
   height: 100px;
   background: #c88a36;
@@ -58,6 +62,7 @@ nav ul li a {
   padding: 5px 0;
   text-transform: capitalize;
 }
+
 nav ul li a::before {
   position: absolute;
   content: "";
@@ -73,6 +78,7 @@ nav ul li a:hover::before {
   transform: scaleX(1);
   transform-origin: left;
 }
+
 label #btn,
 label #cancel {
   color: white;
@@ -87,15 +93,11 @@ label #cancel {
 label {
   float: right;
 }
-@media (min-width: 1117px) {
-}
-@media (max-width: 1118px) {
-}
+
 @media (max-width: 860px) {
   label #btn {
     display: block;
   }
-
   ul {
     position: fixed;
     width: 100%;
@@ -113,41 +115,12 @@ label {
   nav ul li a {
     font-size: 20px;
   }
-
   #check:checked ~ ul {
     top: 100%;
-
-    // left: 0;
   }
   #check:checked ~ label #btn {
     display: block;
   }
-  //   .cards-wrapper {
-  //     display: flex;
-  //     flex-wrap: wrap;
-  //     justify-content: center;
-  //     min-height: 200px;
-  //   }
-
-  //   .card {
-  //     width: 90%;
-  //     margin: 10px;
-  //   }
-  // }
-
-  // .cards-wrapper {
-  //   display: flex;
-  // }
-
-  // .card {
-  //   margin: 0.5em;
-  //   width: calc(100% / 3);
-  // }
-
-  // .image-wrapper {
-  //   height: 10vw;
-  //   margin: 0 auto;
-
   img {
     max-width: 100%;
     max-height: 100%;
@@ -158,6 +131,7 @@ label {
   height: 25px;
   width: 200px;
 }
+
 #check {
   display: none;
 }
@@ -196,7 +170,7 @@ p {
 
 .main-banner {
   background-color: rgb(231, 216, 206);
-  background-image: url(../../image/food.jpg);
+  background-image: url(../../image/Blog-september.jpg);
   min-height: 100vh;
   background-position: center;
   background-size: cover;
@@ -205,17 +179,20 @@ p {
   justify-content: center;
   align-items: center;
 }
+
 .banner-content h1 {
   color: rgb(255, 255, 255);
   font-size: 60px;
   font-weight: 200;
 }
+
 .banner-content p {
   color: rgb(255, 255, 255);
   font-size: medium;
   font-weight: 400;
   margin: 30px 0;
 }
+
 .banner-content {
   width: 50%;
   display: flex;
@@ -223,17 +200,20 @@ p {
   justify-content: center;
   flex-direction: column;
 }
+
 .main-banner a {
   border: 2px solid #c88a36;
   border-radius: 6px;
   background-color: #c88a36;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 5px 20px;
   color: white;
   font-weight: 100;
   text-decoration: none;
 }
+
 .main-banner a:hover {
   color: black;
   background-color: #ffad3a;
-}
+}/*# sourceMappingURL=main.css.map */

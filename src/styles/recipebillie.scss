@@ -50,6 +50,7 @@ body {
       "one"
       "two";
     gap: 20px;
+    margin-top: 150px;
   }
   .container2 {
     height: 80vh;
@@ -69,16 +70,12 @@ body {
     place-items: center;
   }
   .one {
-  
     background-color: skyblue;
     overflow: hidden;
     position: relative;
   }
-  .two {
-    border: 1px solid black;
-    background-color: brown;
-    color: white;
-  }
+ 
+  
   .food-image {
     grid-area: food-image;
     border: 1px solid black;
@@ -131,7 +128,7 @@ body {
   }
 .card-img {
   height: 100%;
-  width: 100%;
+  width: 80%;
   object-fit: cover;
 }
 .card-title {
