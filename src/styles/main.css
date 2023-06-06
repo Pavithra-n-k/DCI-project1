@@ -157,12 +157,6 @@ img {
   border-top-right-radius: 5px;
 }
 
-.image-wrapper img {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 15%;
-}
-
 h2 {
   display: flex;
   padding: 40px;
@@ -199,9 +193,6 @@ p {
   margin: 30px 0;
 }
 
-<<<<<<< HEAD
-/*# sourceMappingURL=main.css.map */
-=======
 .banner-content {
   width: 50%;
   display: flex;
@@ -214,6 +205,7 @@ p {
   border: 2px solid #c88a36;
   border-radius: 6px;
   background-color: #c88a36;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 5px 20px;
   color: white;
@@ -224,5 +216,4 @@ p {
 .main-banner a:hover {
   color: black;
   background-color: #ffad3a;
-}
->>>>>>> 4caba3b0d83c73909d8a440bd05362125a599c81
+}/*# sourceMappingURL=main.css.map */
