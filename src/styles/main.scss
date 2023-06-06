@@ -7,6 +7,7 @@
   list-style-type: none;
   text-decoration: none;
 }
+
 :root {
   font-size: 16px;
 }
@@ -24,15 +25,15 @@ main {
 }
 nav {
   height: 100px;
-  background: #c88a36;
+  background: url(../../image/nav-bg.jpg);
 }
-
 nav img {
   height: 100px;
   width: 100px;
   position: absolute;
   top: 0;
   left: 3%;
+  border-radius: 50%;
 }
 
 nav ul {
@@ -121,31 +122,6 @@ label {
   #check:checked ~ label #btn {
     display: block;
   }
-  //   .cards-wrapper {
-  //     display: flex;
-  //     flex-wrap: wrap;
-  //     justify-content: center;
-  //     min-height: 200px;
-  //   }
-
-  //   .card {
-  //     width: 90%;
-  //     margin: 10px;
-  //   }
-  // }
-
-  // .cards-wrapper {
-  //   display: flex;
-  // }
-
-  // .card {
-  //   margin: 0.5em;
-  //   width: calc(100% / 3);
-  // }
-
-  // .image-wrapper {
-  //   height: 10vw;
-  //   margin: 0 auto;
 
   img {
     max-width: 100%;
@@ -235,4 +211,7 @@ p {
 .main-banner a:hover {
   color: black;
   background-color: #ffad3a;
+}
+body {
+  background: url(../../image/Body-bg.jpg);
 }
