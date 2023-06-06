@@ -1,13 +1,14 @@
 @use "base";
 @use "variables";
 @use "recipes";
-
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-decoration: none;
 }
+
 :root {
   font-size: 16px;
 }
@@ -25,15 +26,16 @@ main {
 }
 nav {
   height: 100px;
-  background: #c88a36;
+  background: url(../../image/nav-bg.jpg);
+  font-family: "Cherry Bomb One", cursive;
 }
-
 nav img {
   height: 100px;
   width: 100px;
   position: absolute;
   top: 0;
   left: 3%;
+  border-radius: 50%;
 }
 
 nav ul {
@@ -54,7 +56,7 @@ nav div {
 nav ul li a {
   position: relative;
   color: white;
-  font-size: 18px;
+  font-size: 25px;
   padding: 5px 0;
   text-transform: capitalize;
 }
@@ -122,31 +124,6 @@ label {
   #check:checked ~ label #btn {
     display: block;
   }
-  //   .cards-wrapper {
-  //     display: flex;
-  //     flex-wrap: wrap;
-  //     justify-content: center;
-  //     min-height: 200px;
-  //   }
-
-  //   .card {
-  //     width: 90%;
-  //     margin: 10px;
-  //   }
-  // }
-
-  // .cards-wrapper {
-  //   display: flex;
-  // }
-
-  // .card {
-  //   margin: 0.5em;
-  //   width: calc(100% / 3);
-  // }
-
-  // .image-wrapper {
-  //   height: 10vw;
-  //   margin: 0 auto;
 
   img {
     max-width: 100%;
@@ -236,4 +213,10 @@ p {
 .main-banner a:hover {
   color: black;
   background-color: #ffad3a;
+}
+body {
+  background: url(../../image/Pages-pg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
