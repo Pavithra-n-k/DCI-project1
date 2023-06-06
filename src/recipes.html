@@ -14,61 +14,44 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="styles/main.scss" />
-    <title>Document</title>
+
+   <link rel="stylesheet" href="styles/recipes.scss">
+   <link rel="stylesheet" href="styles/main.scss">
+  
+    <title>Recipes</title>
   </head>
   <body>
     <header>
-      <nav class="main-nav">
-        <div><img class="logo-img" src="../image/logo.png" alt="logo"></div>
-        <div>
+        <nav class="main-nav">
+          <img class="logo-img" src="../image/logo.png" alt="" />
+          <input type="checkbox" checked="false" id="check" />
+          <label for="check">
+            <i class="fa-solid fa-bars" id="btn"></i>
+          </label>
+
           <ul>
-            <li>Home</li>
-            <li>Recipes</li>
-            <li>About</li>
-            <li>contact</li>
-            <li>
-              <div class="search-container">
-                <input type="text" placeholder="Search" />
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
-            </li>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="#">contact</a></li>
+            <!-- <li class="search-container">
+            <input type="text" placeholder="Search" class="search-container" />
+          </li> -->
           </ul>
-        </div>
-        <section>
-          <div>
-            <a href=""><i class="fa-solid fa-bars"></i></a>
-            <ul>
-              <li>Home</li>
-              <li>Recipes</li>
-              <li>About</li>
-              <li>contact</li>
-              <li>
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </nav>
-    
-      <section>
-        <h1 class="sub-text">Recipe Website</h1>
-        <button>Click me!</button>
-      </section>
+        </nav>
     </header>
     <main>
       <h1 class="page-header">INTERNATIONAL RECIPES</h1>
 
       <section class="map-image">
-        <div><img src="../image/WORLD FOOD (3).png" alt="food map" /></div>
+        <div><img class="food-map" src="../image/WORLD FOOD (3).png" alt="food map" /></div>
       </section>
 
       <section >
         <div class="content">
         
           <br>
-          <p>
+          <p class="main-text" >
             Embarking on a culinary adventure around the world through
             international food is an exciting experience. <br /><br />
             Exploring the culinary traditions of these countries opens a gateway
@@ -91,8 +74,8 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="flags"
-                  src="../image/turkishflag.png"
+                <img class="food"
+                  src="../image/turkishfood.jpg"
                   alt="turkish flag"
                   style="width: 498px; height: 400px"
                 />
@@ -117,8 +100,8 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="flags"
-                  src="../image/ukrainianflag.jpg.jpg"
+                <img class="food"
+                  src="../image/ukrainianfood.jpg"
                   alt="ukrainian flag"
                   style="width: 498px; height: 400px"
                 />
@@ -134,42 +117,18 @@
                   ingredients like mushrooms, dill, and sour cream, adding a
                   unique and delightful touch to traditional Ukrainian meals.
                 </p>
-                <a href="#">UKRAINAN RECIPES</a>
+                <a href="recipeilia.html">UKRAINAN RECIPES</a>
               </div>
             </div>
           </div>
         </div>
+       
         <div class="item item3">
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="flags"
-                  src="../image/indianflag.jpg"
-                  alt="indian flag"
-                  style="width: 498px; height: 400px"
-                />
-                <h1 class="card-title">India</h1>
-              </div>
-              <div class="flip-card-back">
-                <p class="card-rev-text">
-                  Indian cuisine is renowned for its rich and diverse flavors,
-                  combining aromatic spices, such as cumin, turmeric, and
-                  cardamom, to create a symphony of tastes. From the fiery heat
-                  of a perfectly spiced curry to the delicate sweetness of
-                  traditional desserts like Gulab Jamun, Indian food offers a
-                  sensory experience that tantalizes the taste buds.
-                </p>
-                <a href="#">INDIAN RECIPES</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item item4">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img class="flags"
-                  src="../image/rwandanflag.png"
+                <img class="food"
+                  src="../image/rwandanfood.jpg"
                   alt="Rwandan flag"
                   style="width: 498px; height: 400px"
                 />
@@ -191,12 +150,37 @@
             </div>
           </div>
         </div>
+        <div class="item item4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="food"
+                  src="../image/indianfood.jpg.jpg"
+                  alt="indian flag"
+                  style="width: 498px; height: 400px"
+                />
+                <h1 class="card-title">India</h1>
+              </div>
+              <div class="flip-card-back">
+                <p class="card-rev-text">
+                  Indian cuisine is renowned for its rich and diverse flavors,
+                  combining aromatic spices, such as cumin, turmeric, and
+                  cardamom, to create a symphony of tastes. From the fiery heat
+                  of a perfectly spiced curry to the delicate sweetness of
+                  traditional desserts like Gulab Jamun, Indian food offers a
+                  sensory experience that tantalizes the taste buds.
+                </p>
+                <a href="#">INDIAN RECIPES</a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="item item5">
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="flags"
-                  src="../image/jamaicanflag.png"
+                <img class="food"
+                  src="../image/jamaicanfood.jpg"
                   alt="jamaican flag"
                   style="width: 500px; height: 400px"
                 />
@@ -212,7 +196,7 @@
                   For beverages, Jamaican rum is renowned worldwide,
                   with popular brands like Appleton Estate.
                 </p>
-                <a href="#">JAMAICAN RECIPES</a>
+                <a href="recipebillie.html">JAMAICAN RECIPES</a>
               </div>
             </div>
           </div>
@@ -233,6 +217,88 @@
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
+
+<footer
+      class="text-center text-lg-start text-white"
+      style="background-color: #C88A36"
+    >
+      <div class="container p-4 pb-0">
+        <section class="">
+          <div class="row">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-3 ml-5 font-weight-bold">
+                The Recipe Box
+              </h6>
+              <img class="footer-logo" src="../image/logo.png" alt="logo" />
+            </div>
+            <hr class="w-100 clearfix d-md-none" />
+            <hr class="w-100 clearfix d-md-none" />
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+              <a href="recipes.html" target="_blank">Recipes</a>
+              <a href="" target="_blank">Competiton</a> <br />
+              <a href="about.html" target="_blank">About</a> <br />
+              <a href="contacts.html" target="_blank">Contact</a>
+            </div>
+            <hr class="w-100 clearfix d-md-none" />
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p>
+                <i class="fas fa-home mr-3"></i> 145 Topfstrasse, <br />
+                Berlin 13867
+              </p>
+              <p>
+                <i class="fas fa-envelope mr-3"></i>
+                <a href="mailto:info@recipe-box.com">info@recipe-box.com</a>
+              </p>
+              <p>
+                <i class="fas fa-phone mr-3"></i> <a href=""></a> + (49) 153
+                42676897
+              </p>
+            </div>
+          </div>
+        </section>
+        <hr class="my-3" />
+        <section class="p-3 pt-0">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-7 col-lg-8 text-center text-md-start">
+              <div class="p-3">
+                © 2023 Copyright:
+                <a class="text-white" href="https://TheReceipeBox.com/"
+                  >TheReceipeBox.com</a
+                >
+              </div>
+            </div>
+            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                role="button"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                role="button"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                role="button"
+                ><i class="fab fa-google"></i
+              ></a>
+              <a
+                class="btn btn-outline-light btn-floating m-1"
+                class="text-white"
+                role="button"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
 
 <script>
 function openForm() {
