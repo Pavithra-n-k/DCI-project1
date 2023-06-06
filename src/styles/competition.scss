@@ -1,9 +1,95 @@
+@use "base";
+@use "variables";
+@use "recipes";
+
 * {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-decoration: none;
-  }
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  font-size: 16px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+main {
+  margin-top: 155px;
+}
+nav {
+  height: 100px;
+  background: url(../../image/nav-bg.jpg);
+}
+nav img {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 3%;
+  border-radius: 50%;
+}
+#check {
+  display: none;
+}
+nav ul {
+  float: right;
+  margin-right: 25px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}
+
+nav div {
+  display: inline-block;
+}
+
+nav ul li a {
+  position: relative;
+  color: white;
+  font-size: 18px;
+  padding: 5px 0;
+  text-transform: capitalize;
+}
+nav ul li a::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+nav ul li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+label #btn,
+label #cancel {
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  margin-right: 40px;
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+
+label {
+  float: right;
+}
   .header-part2 {
     height: 16vh;
     display: grid;
@@ -21,7 +107,7 @@
     width: 90%;
     display: grid;
     grid-template-columns: 20% auto 20%;
-    grid-template-rows: 20% 38% 38%;
+    grid-template-rows: 17% 38% 38%;
     grid-template-areas: 
     ". container0 ."
     "book1 maincontainer book3"
@@ -46,12 +132,8 @@
     grid-area: book4;
     border-radius: 10px;
   }
-  footer {
-    height: 35vh;
-  }
-
   .maincontainer {
-    margin-top: 120px;
+    margin-top: 60px;
     position: absolute;
     width: 50%;
     height: 60vh;
@@ -68,7 +150,7 @@
     border-radius: 10px;
   }
   .container0 {
-    height: 10vh;
+    // height: 10vh;
     display: grid;
     place-items: center;
     grid-area: container0;
@@ -103,8 +185,8 @@
     border-radius: 10px;
     backface-visibility: hidden;
     overflow: hidden;
-    background: #fafafa;
-    color: #333;
+    background: #c88a36;
+    color: white;
     text-align: center;
     transform: rotateY(180deg);
   }
