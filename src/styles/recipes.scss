@@ -1,60 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
-body{
-  background-color:#EFE7DD;
-  color: #764B36;
-  font-family: 'Comfortaa', cursive;
+body {
+  background-color: #efe7dd;
+  color: #764b36;
+  font-family: "Comfortaa", cursive;
 }
 
- .main-nav{
-  background-color: #9B4922;
- }
+.main-nav {
+  background-color: #9b4922;
+}
 
-main{
+main {
   margin-top: 350px;
 }
-.page-header{
-  color: #764B36;
+.page-header {
+  color: #764b36;
   text-align: center;
   font-size: 60px;
   margin-top: 200px;
   margin-bottom: 40px;
 }
-.map-image{
+.map-image {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.food-map{
+.food-map {
   border-radius: 50%;
 }
 
-
 .content {
-text-align: center;
-padding: 70px;
+  text-align: center;
+  padding: 70px;
 }
 
-.main-text{
-  color: #764B36;
+.main-text {
+  color: #764b36;
   font-size: 20px;
   padding-left: 100px;
   padding-right: 100px;
 }
 
-.card-header{
+.card-header {
   text-align: center;
 }
 
 p {
   font-size: 20px;
 }
-
 
 .grid-container {
   display: grid;
@@ -66,8 +65,6 @@ p {
   margin-top: 100px;
   margin-bottom: 150px;
 }
-
-
 
 .item {
   padding: 10px;
@@ -103,7 +100,7 @@ p {
   background-color: transparent;
   width: 500px;
   height: 500px;
- 
+
   border-radius: 30px;
   perspective: 1000px;
 }
@@ -131,19 +128,19 @@ p {
 }
 
 .flip-card-front {
-  background-color:  #9B4922;
+  background-color: #9b4922;
   color: rgb(255, 255, 255);
   border-radius: 30px;
 }
 
 .flip-card-back {
-  background-color:  #9B4922;
+  background-color: #9b4922;
   color: white;
   border-radius: 30px;
   transform: rotateY(180deg);
 }
 
-.card-title{
+.card-title {
   padding-top: 20px;
 }
 
@@ -154,28 +151,27 @@ p {
   color: white;
 }
 
-.food{
+.food {
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
 }
 
-a{
- text-decoration: none;
- color: white;
- font-size: 20px;
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 
-
 .open-button {
-  background-color: #9B4922;
+  background-color: #9b4922;
   color: white;
   padding: 16px 20px;
   border-radius: 15px;
-  border: 3px solid  #C88A36;
+  border: 3px solid #c88a36;
   cursor: pointer;
   position: fixed;
   bottom: 15px;
@@ -192,13 +188,11 @@ a:hover{
   z-index: 9;
 }
 
-
 .form-container {
   max-width: 300px;
   padding: 10px;
   background-color: white;
 }
-
 
 .form-container textarea {
   width: 100%;
@@ -210,12 +204,10 @@ a:hover{
   min-height: 200px;
 }
 
-
 .form-container textarea:focus {
   background-color: orange;
   outline: none;
 }
-
 
 .form-container .btn {
   background-color: orange;
@@ -224,34 +216,75 @@ a:hover{
   border: none;
   cursor: pointer;
   width: 100%;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   opacity: 0.8;
 }
-
 
 .form-container .cancel {
   background-color: red;
 }
 
-
-.form-container .btn:hover, .open-button:hover {
+.form-container .btn:hover,
+.open-button:hover {
   opacity: 1;
 }
-.chat-head{
+.chat-head {
   color: orange;
 }
-b{
+b {
   color: orange;
 }
-::placeholder{
+::placeholder {
   color: white;
 }
 
-footer{
+// FOOTER
 
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 30px 80px 10px 80px;
+  background-color: #c88a36;
+  font-family: "Cherry Bomb One", cursive;
 }
 
-.page-links:hover{
+h3 {
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #9b4922;
+}
+
+span {
+  padding-left: 40px;
+}
+.email {
+  padding-left: 10px;
+}
+
+.contact-list li {
+  color: white;
+}
+
+.fas {
+  color: #764b36;
+}
+
+.socials:hover {
+  cursor: pointer;
+}
+
+.logo-footer {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+}
+
+.page-links:hover {
   text-decoration: none;
 }
 @media (min-width: 1117px) {
@@ -306,5 +339,9 @@ footer{
     border-radius: 50%;
     margin-top: 10px;
     z-index: 2;
+  }
+
+  .grid-container {
+    display: block;
   }
 }
