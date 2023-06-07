@@ -9,7 +9,7 @@
 
 body {
   background-color: rgb(200, 138, 54);
-  
+  font-family: "Cherry Bomb One", cursive;
 }
 
 
@@ -38,6 +38,7 @@ body {
   color: #000;
   text-decoration: none;
   margin-right: 10px;
+  font-family: "Cherry Bomb One", cursive;
 }
 
 .contact-info {
@@ -63,6 +64,7 @@ body {
 .contact-form h2 {
   text-align: center;
   margin-bottom: 20px;
+  font-family: "Cherry Bomb One", cursive;
 }
 
 .contact-form input[type=text],
@@ -118,14 +120,15 @@ body {
 }
 
 .find-us .social-media-icons a {
-  color: #000;
+  color: rgb(80, 59, 31);
   text-decoration: none;
   margin-right: 10px;
   transition: color 0.6s ease;
+
 }
 
 .find-us .social-media-icons a:hover {
-  color: green;
+  color: rgb(200, 138, 54);
 }
 
 .footer-logo {
