@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -141,9 +142,11 @@ header {
 main {
   margin-top: 100px;
 }
+
 nav {
   height: 100px;
-  background: #C88A36;
+  background: #c88a36;
+  font-family: "Cherry Bomb One", cursive;
 }
 nav img {
   height: 100px;
