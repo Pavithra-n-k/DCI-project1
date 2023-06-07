@@ -12,84 +12,49 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/7f7a719b09.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
+      <nav class="main-nav">
+        <img src="../image/logo.png" alt="" />
+        <input type="checkbox" checked="false" id="check" />
+        <label for="check">
+          <i class="fa-solid fa-bars" id="btn"></i>
+        </label>
+        <ul>
+          <li><a href="#"> Home</a></li>
+          <li><a href="./recipes.html">Recipes</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contacts.html">contact</a></li>
+          <li><a href="./competition.html">competition</a></li>
+          <!-- <li class="search-container">
+          <input type="text" placeholder="Search" class="search-container" />
+        </li> -->
+        </ul>
+      </nav>
+    </header>
 
-       <!-- navbar -->
-
-
-      <section class="header-part1">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Logo</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled">Disabled</a>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                  Search
-                </button>
-              </form>
-            </div>
-          </div>
-        </nav>
-      </section>
-
-       <!-- Header part -->
-
-      <section class="header-part2">
-        <h1>THIS IS THE HEADER</h1>
-      </section>
     </header>
 
       <main>
@@ -206,9 +171,9 @@
             <h3>SUBMIT FORM</h3>
           <label for="email">Tell us who you are</label> <br>
           <input type="email" placeholder="please fill in your email"> <br>
-          <label for="text">To win, tell us your favorite family recipe</label> <br>
+          <label for="text">Name a recipe book you would like to have</label> <br>
           <input type="text" placeholder="Please enter your recipe"> <br>
-          <label for="text">Text input field</label> <br>
+          <label for="text">To win, tell us your favorite family recipe</label> <br>
           <textarea name="text" id="" cols="100%" rows="7">Send us a message</textarea> <br>
           <button class="submit-btn">submit</button>
           </form>
