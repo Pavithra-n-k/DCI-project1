@@ -249,6 +249,7 @@ form {
   display: flex;
   flex-flow: column nowrap;
   background-color: rgba(245, 238, 220, 0.438);
+  background-image: url(../../image/Pages-pg.png);
 }
 .contact h2 {
   margin-bottom: 50px;
@@ -273,12 +274,13 @@ textarea {
 .submit-btn {
     width: 10rem;
     margin-top: 0.5rem;
-    background: none;
+    background: #c88a36;
+    color: white;
     border-radius: 10px;
 }
 
 .submit-btn:hover {
-  background-color: rgb(174, 227, 248);
+  background-color: #946727;
 }
 .submit-btn:active {
   box-shadow: 15px 10px 20px rgb(255, 255, 255);
