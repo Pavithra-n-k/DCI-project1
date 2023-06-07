@@ -1,0 +1,22 @@
+.mp4 {
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  height: 80vh;
+  display: grid;
+  place-items: center;
+  background-color: rgb(217,167,146);
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(126,70,45);
+  color: white;
+  font-weight: 900;
+}
+button:hover {
+  cursor: pointer;
+}
