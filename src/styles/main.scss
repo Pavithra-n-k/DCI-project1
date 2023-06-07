@@ -226,9 +226,16 @@ body {
     margin-bottom: 100px;
   }
 
-
-  nav ul {
-  display: none;
+   nav ul {
+    display: none;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
   }
   // nav ul li {
   //   display: block;
@@ -262,14 +269,14 @@ body {
 }
 
 .footer-container {
- display: flex;
- flex-direction: row;
- flex-wrap: wrap;
- justify-content: space-between;
- width: 100vw;
- padding: 30px 80px 10px 80px;
- background-color: #c88a36;
- font-family: "Cherry Bomb One", cursive; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100vw;
+  padding: 30px 80px 10px 80px;
+  background-color: #c88a36;
+  font-family: "Cherry Bomb One", cursive;
 }
 
 h3 {
