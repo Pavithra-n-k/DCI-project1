@@ -19,6 +19,7 @@ header {
   right: 0;
   left: 0;
   z-index: 2;
+  grid-area: header;
 }
 
 main {
@@ -114,6 +115,7 @@ label {
     "book2 maincontainer book4";
     gap: 10px;
     margin-bottom: 150px;
+    grid-area: section1;
   }
   .book1 {
     grid-area: book1;
@@ -239,6 +241,7 @@ label {
   .contact {
     margin-top: 80px;
     padding: 10px;
+    grid-area: form;
   }
   th, td {
     padding: .5rem;
@@ -250,6 +253,9 @@ form {
   flex-flow: column nowrap;
   background-color: rgba(245, 238, 220, 0.438);
   background-image: url(../../image/Pages-pg.png);
+}
+footer {
+  grid-area: footer;
 }
 .contact h2 {
   margin-bottom: 50px;
@@ -325,6 +331,30 @@ textarea {
     max-width: 100%;
     max-height: 100%;
     border-radius: 15%;
+  }
+  .maincontainer {
+    display: none;
+  }
+  .container2 {
+    display: none;
+  }
+  .section1 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    ". container0 ."
+    "book1 book3"
+    "book2 book4";
+  }
+  body {
+    display: grid;
+    grid-template-columns: 1f;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "header"
+    "section1"
+    "form"
+    "footer";
   }
 }
 
