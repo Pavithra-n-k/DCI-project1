@@ -1,7 +1,9 @@
 @use "base";
 @use "variables";
 @use "recipes";
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300&display=swap");
 
+// Main Nav
 * {
   margin: 0;
   padding: 0;
@@ -19,30 +21,35 @@ header {
   right: 0;
   left: 0;
   z-index: 2;
-  grid-area: header;
 }
-
 main {
-  margin-top: 155px;
+  margin-top: 100px;
 }
 nav {
   height: 100px;
-  background: url(../../image/nav-bg.jpg);
-}
-nav img {
+  background: #c88a36;
+  font-family: "Cherry Bomb One", cursive;
   height: 100px;
-  width: 100px;
+}
+.main-nav {
+  background: #c88a36;
+}
+
+nav img {
+  height: 130px;
+  width: 130px;
   position: absolute;
   top: 0;
   left: 3%;
   border-radius: 50%;
+  margin-top: 10px;
+  z-index: 2;
 }
-#check {
-  display: none;
-}
+
 nav ul {
   float: right;
   margin-right: 25px;
+  padding-top: 30px;
 }
 
 nav ul li {
@@ -58,7 +65,7 @@ nav div {
 nav ul li a {
   position: relative;
   color: white;
-  font-size: 18px;
+  font-size: 25px;
   padding: 5px 0;
   text-transform: capitalize;
 }
@@ -76,7 +83,19 @@ nav ul li a::before {
 nav ul li a:hover::before {
   transform: scaleX(1);
   transform-origin: left;
+  text-decoration: underline;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
 label #btn,
 label #cancel {
   color: white;
@@ -91,6 +110,25 @@ label #cancel {
 label {
   float: right;
 }
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15%;
+}
+nav a {
+  list-style: none;
+}
+
+.search-container {
+  height: 25px;
+  width: 200px;
+}
+#check {
+  display: none;
+}
+
+// END OF NAV
   .header-part2 {
     height: 16vh;
     display: grid;
@@ -120,6 +158,9 @@ label {
   .book1 {
     grid-area: book1;
    border-radius: 10px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
   }
   .book2 {
     grid-area: book2;

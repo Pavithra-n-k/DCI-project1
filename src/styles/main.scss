@@ -237,14 +237,8 @@ body {
     margin-bottom: 500px;
   }
 
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: #c88a36;
-    top: 100px;
-    left: 0;
-    text-align: center;
+   nav ul {
+    display: none;
   }
   nav ul li {
     display: block;
@@ -328,4 +322,42 @@ body {
     border: 8px solid #c88a36;
     box-shadow: 9px 9px 68px -12px rgba(0, 0, 0, 0.72);
   }
+
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100vw;
+  padding: 30px 80px 10px 80px;
+  background-color: #c88a36;
+  font-family: "Cherry Bomb One", cursive;
+}
+h3 {
+  color: white;
+}
+a:hover {
+  color: white;
+}
+span {
+  padding-left: 40px;
+}
+.email {
+  padding-left: 10px;
+}
+.contact-list li {
+  color: white;
+}
+.fas {
+  color: #764b36;
+}
+.socials:hover {
+  cursor: pointer;
+}
+.logo-footer {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+}
+.page-links:hover {
+  text-decoration: none;
+>>>>>>> 74b6665e644d86096cb60986217129604d8165e5
 }
