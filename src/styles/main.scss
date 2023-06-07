@@ -93,7 +93,7 @@ a {
   font-size: 20px;
 }
 
-a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
@@ -277,9 +277,7 @@ h3 {
   color: white;
 }
 a:hover {
-  text-decoration: none;
   color: white;
-  background-color: #9b4922;
 }
 span {
   padding-left: 40px;
