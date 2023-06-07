@@ -1,122 +1,22 @@
-img {
-  
-  height: 100vh;
- 
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+.mp4 {
+  justify-content: center;
+  align-items: center;
 }
 
-
-/* .page_404 { padding:40px 0; background:#fff; font-family: 'Arvo', serif;
-}
-
-.page_404  img{ width:100%;}
-
-.four_zero_four_bg{
- background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
-    height: 400px;
-    background-position: center;
- }
- 
- 
- .four_zero_four_bg h1{
- font-size:70px;
- }
- 
-  .four_zero_four_bg h3{
-			 font-size:80px;
-			 }
-			 
-			 .link_404{			 
-	color: #fff!important;
-    padding: 10px 20px;
-    background: #39ac31;
-    margin: 20px 0;
-    text-align: center;
-    justify-content: center;
-    display: inline-block;}
-	.contant_box_404{ margin-top:-50px;} */
-
-/* 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #c88a36;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 50px;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 48px;
-    color: #333;
-    margin-bottom: 20px;
-    animation: scaleAnimation 1s ease-in-out infinite alternate;
-  }
-  
-  p {
-    font-size: 24px;
-    color: #666;
-    margin-bottom: 30px;
-    animation: fadeInAnimation 1s ease-in-out forwards;
-    opacity: 0;
-  }
-  
-  a {
-    color: #fff;
-    background-color: #764B36;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-size: 20px;
-    animation: slideInAnimation 1s ease-in-out forwards;
-    opacity: 0;
-  }
-  
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 36px;
-    }
-    
-    p {
-      font-size: 18px;
-    }
-    
-    a {
-      font-size: 16px;
-    }
-  }
+  height: 80vh;
+  display: grid;
+  place-items: center;
+  background-color: rgb(217,167,146);
+}
 
-  @keyframes scaleAnimation {
-    0% { transform: scale(1); }
-    100% { transform: scale(1.1); }
-  }
-  
-  @keyframes fadeInAnimation {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  @keyframes slideInAnimation {
-    0% { opacity: 0; transform: translateY(50px); }
-    100% { opacity: 1; transform: translateY(0); }
-  }
-
-  .four_zero_four_bg{
- 
-    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
-       
-      height: 370px;
-      background-position: center;
-      justify-content: center;
-      align-items: center;
-    } */
+button {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(126,70,45);
+  color: white;
+  font-weight: 900;
+}
+button:hover {
+  cursor: pointer;
+}
