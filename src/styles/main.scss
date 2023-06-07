@@ -75,6 +75,17 @@ nav ul li a:hover::before {
   transform: scaleX(1);
   transform-origin: left;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 label #btn,
 label #cancel {
   color: white;
@@ -129,6 +140,7 @@ label {
     max-width: 100%;
     max-height: 100%;
     border-radius: 15%;
+    
   }
 }
 .search-container {
@@ -172,7 +184,7 @@ p {
 }
 
 .main-banner {
-  background-color: rgb(231, 216, 206);
+  background-color: #e7d8ce;
   background-image: url(../../image/food.jpg);
   min-height: 100vh;
   background-position: center;
