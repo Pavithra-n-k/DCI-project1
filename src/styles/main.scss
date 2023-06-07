@@ -93,7 +93,7 @@ a {
   font-size: 20px;
 }
 
-a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
@@ -112,12 +112,11 @@ label {
   float: right;
 }
 
-  img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 15%;
-    
-  }
+img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15%;
+}
 
 .search-container {
   height: 25px;
@@ -214,10 +213,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media (min-width: 1117px) {
-}
-@media (max-width: 1118px) {
-}
+
 @media (max-width: 860px) {
   label #btn {
     display: block;
@@ -267,4 +263,42 @@ body {
     margin-top: 10px;
     z-index: 2;
   }
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 30px 80px 10px 80px;
+  background-color: #c88a36;
+  font-family: "Cherry Bomb One", cursive;
+}
+h3 {
+  color: white;
+}
+a:hover {
+  color: white;
+}
+span {
+  padding-left: 40px;
+}
+.email {
+  padding-left: 10px;
+}
+.contact-list li {
+  color: white;
+}
+.fas {
+  color: #764b36;
+}
+.socials:hover {
+  cursor: pointer;
+}
+.logo-footer {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+}
+.page-links:hover {
+  text-decoration: none;
 }
