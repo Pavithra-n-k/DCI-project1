@@ -116,6 +116,9 @@ img {
   max-height: 100%;
   border-radius: 15%;
 }
+nav a {
+  list-style: none;
+}
 
 .search-container {
   height: 25px;
@@ -155,6 +158,9 @@ img {
   .book1 {
     grid-area: book1;
    border-radius: 10px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
   }
   .book2 {
     grid-area: book2;
