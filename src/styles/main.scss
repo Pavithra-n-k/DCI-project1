@@ -248,6 +248,14 @@ body {
   nav ul li a {
     font-size: 20px;
   }
+   nav ul li {
+     display: block;
+     margin: 50px 0;
+     line-height: 30px;
+   }
+   nav ul li a {
+     font-size: 20px;
+   }
 
   #check:checked ~ ul {
     top: 100%;
@@ -268,16 +276,18 @@ body {
     margin-top: 10px;
     z-index: 2;
   }
+ 
 }
-// .footer-container {
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-between;
-//   width: 100vw;
-//   padding: 30px 80px 10px 80px;
-//   background-color: #c88a36;
-//   font-family: "Cherry Bomb One", cursive;
-// }
+ .footer-container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   width: 100vw;
+   padding: 30px 80px 10px 80px;
+   background-color: #c88a36;
+   font-family: "Cherry Bomb One", cursive;
+ }
 // h3 {
 //   color: white;
 // }
@@ -314,6 +324,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
   img {
     height: 80vh;
@@ -323,6 +334,7 @@ body {
     box-shadow: 9px 9px 68px -12px rgba(0, 0, 0, 0.72);
   }
 
+  .footer-container{
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -331,10 +343,12 @@ body {
   background-color: #c88a36;
   font-family: "Cherry Bomb One", cursive;
 }
+
 h3 {
   color: white;
 }
 a:hover {
+  background: none;
   color: white;
 }
 span {
@@ -356,8 +370,9 @@ span {
   height: 200px;
   width: 200px;
   margin: 10px;
+  border-radius: 50%;
 }
 .page-links:hover {
   text-decoration: none;
->>>>>>> 74b6665e644d86096cb60986217129604d8165e5
+
 }
