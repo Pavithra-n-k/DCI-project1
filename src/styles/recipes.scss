@@ -288,6 +288,14 @@ span {
 .page-links:hover {
   text-decoration: none;
 }
+
+@media (max-width:860px) {
+  .grid-container{
+    display: block; 
+  }
+
+  
+}
 // @media (min-width: 1117px) {
 // }
 // @media (max-width: 1118px) {
