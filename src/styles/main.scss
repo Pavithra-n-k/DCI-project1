@@ -237,7 +237,7 @@ body {
     margin-bottom: 500px;
   }
 
-   nav ul {
+  nav ul {
     display: none;
   }
   nav ul li {
@@ -248,14 +248,14 @@ body {
   nav ul li a {
     font-size: 20px;
   }
-   nav ul li {
-     display: block;
-     margin: 50px 0;
-     line-height: 30px;
-   }
-   nav ul li a {
-     font-size: 20px;
-   }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
 
   #check:checked ~ ul {
     top: 100%;
@@ -276,18 +276,17 @@ body {
     margin-top: 10px;
     z-index: 2;
   }
- 
 }
- .footer-container {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   width: 100vw;
-   padding: 30px 80px 10px 80px;
-   background-color: #c88a36;
-   font-family: "Cherry Bomb One", cursive;
- }
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 30px 80px 10px 80px;
+  background-color: #c88a36;
+  font-family: "Cherry Bomb One", cursive;
+}
 // h3 {
 //   color: white;
 // }
@@ -326,15 +325,15 @@ body {
   justify-content: center;
 }
 
-  img {
-    height: 80vh;
-    width: auto;
-    border-radius: 10%;
-    border: 8px solid #c88a36;
-    box-shadow: 9px 9px 68px -12px rgba(0, 0, 0, 0.72);
-  }
+.contest-poster img {
+  height: 80vh;
+  width: auto;
+  border-radius: 10%;
+  border: 8px solid #c88a36;
+  box-shadow: 9px 9px 68px -12px rgba(0, 0, 0, 0.72);
+}
 
-  .footer-container{
+.footer-container {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -374,5 +373,4 @@ span {
 }
 .page-links:hover {
   text-decoration: none;
-
 }
