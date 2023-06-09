@@ -33,16 +33,14 @@ body {
   }
 
   footer {
-
-    height: 350px;
-   
-
-    height: 14vh;
     border: 1px solid black;
-
+    color: white;
     display: flex;
     justify-content: center;
     grid-area: footer;
+  }
+  footer a {
+    color: white;
   }
   .container1 {
     height: 80vh;
