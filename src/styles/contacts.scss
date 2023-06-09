@@ -9,7 +9,9 @@
 
 body {
   background-color: rgb(200, 138, 54);
-  
+
+  font-family: "Cherry Bomb One", cursive;
+
 }
 
 
@@ -38,6 +40,9 @@ body {
   color: #000;
   text-decoration: none;
   margin-right: 10px;
+
+  font-family: "Cherry Bomb One", cursive;
+
 }
 
 .contact-info {
@@ -48,6 +53,13 @@ body {
 
 .contact-info span {
   margin-left: 10px;
+}
+
+footer {
+  color: white;
+}
+footer a {
+  color: white;
 }
 
 /* Contact form */
@@ -63,6 +75,9 @@ body {
 .contact-form h2 {
   text-align: center;
   margin-bottom: 20px;
+
+  font-family: "Cherry Bomb One", cursive;
+
 }
 
 .contact-form input[type=text],
@@ -118,6 +133,17 @@ body {
 }
 
 .find-us .social-media-icons a {
+
+  color: rgb(80, 59, 31);
+  text-decoration: none;
+  margin-right: 10px;
+  transition: color 0.6s ease;
+
+}
+
+.find-us .social-media-icons a:hover {
+  color: rgb(200, 138, 54);
+
   color: #000;
   text-decoration: none;
   margin-right: 10px;
@@ -126,6 +152,7 @@ body {
 
 .find-us .social-media-icons a:hover {
   color: green;
+
 }
 
 .footer-logo {
@@ -173,6 +200,7 @@ nav ul li a {
   font-size: 18px;
   padding: 5px 0;
   text-transform: capitalize;
+
 }
 nav ul li a::before {
   position: absolute;
@@ -183,6 +211,7 @@ nav ul li a::before {
   background: white;
   transform: scaleX(0);
   transform-origin: right;
+
 }
 nav ul li a:hover::before {
   transform: scaleX(1);

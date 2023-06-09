@@ -33,8 +33,13 @@ body {
   }
 
   footer {
+
+    height: 350px;
+   
+
     height: 14vh;
     border: 1px solid black;
+
     display: flex;
     justify-content: center;
     grid-area: footer;
@@ -143,8 +148,13 @@ body {
   .card-sub-title {
     color: white;
     text-transform: capitalize;
+
+    font-size: 34px;
+    font-weight: 700;
+
     font-size: 14px;
     font-weight: 300;
+
     margin: 10px 0;
   }
   .card-info {
