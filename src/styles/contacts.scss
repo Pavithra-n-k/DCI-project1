@@ -50,7 +50,12 @@ body {
 .contact-info span {
   margin-left: 10px;
 }
-
+footer {
+  color: white;
+}
+footer a {
+  color: white;
+}
 /* Contact form */
 .contact-form {
   width: 450px;
@@ -176,6 +181,7 @@ nav ul li a {
   font-size: 18px;
   padding: 5px 0;
   text-transform: capitalize;
+  text-decoration: none;
 }
 nav ul li a::before {
   position: absolute;
@@ -186,6 +192,7 @@ nav ul li a::before {
   background: white;
   transform: scaleX(0);
   transform-origin: right;
+  text-decoration: none;
 }
 nav ul li a:hover::before {
   transform: scaleX(1);
