@@ -15,6 +15,13 @@
   font-size: 16px;
 }
 
+body {
+  background: url(../../image/Pages-pg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -22,19 +29,22 @@ header {
   left: 0;
   z-index: 2;
 }
-
-main {
-  margin-top: 100px;
+.main-nav {
+  background: #c88a36;
 }
+
 nav {
   height: 100px;
   background: #c88a36;
   font-family: "Cherry Bomb One", cursive;
   height: 100px;
 }
-.main-nav {
-  background: #c88a36;
+
+main {
+  margin-top: 100px;
 }
+
+
 
 nav img {
   height: 130px;
@@ -59,9 +69,9 @@ nav ul li {
   margin: 0 15px;
 }
 
-nav div {
-  display: inline-block;
-}
+// nav div {
+//   display: inline-block;
+// }
 
 nav ul li a {
   position: relative;
@@ -70,22 +80,22 @@ nav ul li a {
   padding: 5px 0;
   text-transform: capitalize;
 }
-nav ul li a::before {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  height: 100%;
-  background: white;
-  transform: scaleX(0);
-  transform-origin: right;
-}
+// nav ul li a::before {
+//   position: absolute;
+//   content: "";
+//   left: 0;
+//   bottom: 0;
+//   height: 100%;
+//   background: white;
+//   transform: scaleX(0);
+//   transform-origin: right;
+// }
 
-nav ul li a:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
-  text-decoration: underline;
-}
+// nav ul li a:hover::before {
+//   transform: scaleX(1);
+//   transform-origin: left;
+//   text-decoration: underline;
+// }
 
 a {
   text-decoration: none;
@@ -97,8 +107,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-label #btn,
-label #cancel {
+label #btn {
   color: white;
   font-size: 30px;
   line-height: 80px;
@@ -118,10 +127,11 @@ footer img {
   border-radius: 15%;
 }
 
-.search-container {
-  height: 25px;
-  width: 200px;
-}
+// .search-container {
+//   height: 25px;
+//   width: 200px;
+// }
+
 #check {
   display: none;
 }
@@ -208,13 +218,8 @@ p {
   color: black;
   background-color: #ffad3a;
 }
-body {
-  background: url(../../image/Pages-pg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (max-width: 1234px) {
+
+@media (max-width: 1201px) {
   .recipe-container {
     display: flex;
     flex-direction: column;
@@ -225,10 +230,11 @@ body {
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 769px) {
   label #btn {
     display: block;
   }
+
   .recipe-container {
     display: flex;
     justify-content: center;
@@ -240,31 +246,33 @@ body {
   nav ul {
     display: none;
   }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a {
-    font-size: 20px;
-  }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a {
-    font-size: 20px;
-  }
+
+  //  because ul display set to none , we don't need properties below 
+  // nav ul li {
+  //   display: block;
+  //   margin: 50px 0;
+  //   line-height: 30px;
+  // }
+  // nav ul li a {
+  //   font-size: 20px;
+  // }
+  // nav ul li {
+  //   display: block;
+  //   margin: 50px 0;
+  //   line-height: 30px;
+  // }
+  // nav ul li a {
+  //   font-size: 20px;
+  // }
 
   #check:checked ~ ul {
     top: 100%;
 
     // left: 0;
   }
-  #check:checked ~ label #btn {
-    display: block;
-  }
+  // #check:checked ~ label #btn {
+  //   display: block;
+  // }
 
   nav img {
     height: 130px;
