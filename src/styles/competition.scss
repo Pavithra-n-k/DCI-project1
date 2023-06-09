@@ -297,6 +297,17 @@ form {
 }
 footer {
   grid-area: footer;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100vw;
+  padding: 30px 80px 10px 80px;
+  background-color: #c88a36;
+  font-family: "Cherry Bomb One", cursive;
+}
+
+footer a {
+  color: white;
 }
 .contact h2 {
   margin-bottom: 50px;
