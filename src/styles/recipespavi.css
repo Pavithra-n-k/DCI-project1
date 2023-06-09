@@ -126,30 +126,45 @@ footer img {
   display: none;
 }
 
-// END OF NAV
-
 .recipe-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  align-items: center;
   max-width: 1440px;
   margin: auto;
+  margin-top: -70px;
 }
 
 .card {
-  width: auto;
+  width: 85%;
   height: 500px;
   background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
+  border-radius: 2%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 30px;
   max-width: 400px;
   margin-bottom: 60px;
+  box-shadow: 9px 9px 68px -12px rgba(0, 0, 0, 0.72);
 }
 
-img {
-  width: 100%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+.card-img {
+  background: url(../image/nav-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 401px;
+  height: 75px;
+  margin-top: -31px;
+  margin-left: -31px;
+  border-top-left-radius: %;
+}
+
+.card img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding-bottom: 30px;
+  margin-left: 120px;
 }
 
 h2 {
@@ -213,6 +228,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.recipe {
+  margin-top: -450px;
 }
 @media (max-width: 1234px) {
   .recipe-container {
@@ -287,42 +305,34 @@ body {
   background-color: #c88a36;
   font-family: "Cherry Bomb One", cursive;
 }
-// h3 {
-//   color: white;
-// }
-// footer a:hover {
-//   color: white;
-// }
-// span {
-//   padding-left: 40px;
-// }
-// .email {
-//   padding-left: 10px;
-// }
-// .contact-list li {
-//   color: white;
-// }
-// .fas {
-//   color: #764b36;
-// }
-// .socials:hover {
-//   cursor: pointer;
-// }
-// .logo-footer {
-//   height: 200px;
-//   width: 200px;
-//   margin: 10px;
-// }
-// .page-links:hover {
-//   text-decoration: none;
-// }
-.contest-poster {
-  // background-image: url(../../image/nav-bg.jpg);
-  padding-top: 100px;
-  padding-bottom: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+h3 {
+  color: white;
+}
+footer a:hover {
+  color: white;
+}
+span {
+  padding-left: 40px;
+}
+.email {
+  padding-left: 10px;
+}
+.contact-list li {
+  color: white;
+}
+.fas {
+  color: #764b36;
+}
+.socials:hover {
+  cursor: pointer;
+}
+.logo-footer {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+}
+.page-links:hover {
+  text-decoration: none;
 }
 
 .contest-poster img {
