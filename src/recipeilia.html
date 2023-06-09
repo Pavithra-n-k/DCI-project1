@@ -6,15 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>UkrainianBorscht</title>
     <link rel="stylesheet" href="./styles/recipeilia.scss">
+
+    <link rel="stylesheet" href="styles/main.scss">
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link
+    href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+    rel="stylesheet"
+  />
   </head>
   <body>
-    
+    <header>
+      <nav class="main-nav">
+        <img class="logo-img" src="../image/logo.png" alt="" />
+        <input type="checkbox" checked="false" id="check" />
+        <label for="check">
+          <i class="fa-solid fa-bars" id="btn"></i>
+        </label>
+        <ul>
+          <li><a href="index.html"> Home</a></li>
+          <li><a href="./recipes.html">Recipes</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contacts.html">Contact</a></li>
+          <li><a href="./competition.html">Competition</a></li>
+        </ul>
+      </nav>
+  </header>
     
 
     <section class="container1">
@@ -60,29 +82,89 @@
 
         <h2>Directions</h2>
         <p>
-<strong>Step 1</strong> 
+<strong>Step 1.</strong> 
 Make the stock: In a large soup pot (at least 10 quarts, see NOTES), combine the beef chuck, ham bone and marrow bones with the water — if the water doesn't cover the meat, add more as needed — and bring to a boil over high heat. As the liquid comes to a simmer, it will start to produce gray scum that will float to the top; skim it periodically.
 <br>
-<strong>Step 2</strong>
+<strong>Step 2.</strong>
 Once the liquid comes to a boil, reduce the heat to low so the broth is at a gentle simmer. Add the onion, parsnips, if using, carrot, celery and bouquet garni, then partially cover and cook until the meat is tender and the stock is flavorful, 2 to 3 hours. Remove from the heat, discard the solids (or save for another use), then let cool for about 1 hour and refrigerate overnight.
 <br>
-Step 3
+<strong>Step 3.</strong>
 Make the borshch: The next day, skim off the fat from the stock (it should be a generous layer) and discard or save for another use. You should have about 3 quarts of stock. Add the water and the short ribs, set the pot over medium-high heat, and bring to a simmer.
 <br>
-Step 4
+<strong>Step 4.</strong>
 Reduce the heat to low and add the beets and potatoes. Season to taste with salt and pepper — you want a flavorful but not aggressively seasoned stock — and simmer until the vegetables are tender, about 30 minutes.
 <br>
-Step 5
+<strong>Step 5.</strong>
 Meanwhile, in a large skillet over medium heat, heat the oil until shimmering. Add the onions and carrots, and cook, stirring, until the carrots soften and start to caramelize, 5 to 7 minutes.
         </p>
       </div>
     </section>
-    <footer>footer</footer>
+
+    <footer id="footer-main">
+      <div class="footer-container">
+        <section class="comp-logo">
+          <h3>THE RECIPE BOX</h3>
+          <img class="logo-footer" src="../image/logo.png" alt="logo" />
+        </section>
+        <section class="links">
+          <h3>USEFUL LINKS</h3>
+          <ul class="page-links">
+            <a href="./index.html">Home</a>
+            <br />
+            <a href="./recipes.html">Recipes</a>
+            <br />
+            <a href="./competition.html">Competiton</a>
+            <br />
+            <a href="./about.html">About</a>
+            <br />
+            <a href="./contacts.html">Contact</a>
+          </ul>
+        </section>
+        <section class="contact-info">
+          <h3>CONTACT</h3>
+          <ul class="contact-list">
+            <li>
+              <i class="fas fa-home mr-3"></i> Topfstrasse 145 <br />
+               <span>Berlin 13867</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope mr-3"></i
+              ><a class="email" href="mailto:info@recipe-box.com">info@recipe-box.com</a>
+            </li>
+            <li><i class="fas fa-phone mr-3"></i> + (49) 153 42676897</li>
+          </ul>
+        </section>
+        <section class="copyright">
+          © 2023 Copyright <br>
+          <a class="text-white" href="https://TheReceipeBox.com/">TheReceipeBox.com</a>
+        </section>
+        <section class="socials">
+          <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-google"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-instagram"></i></a>
+        </section>
+      </div>
+    </footer>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <script
+    src="https://kit.fontawesome.com/7f7a719b09.js"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>
