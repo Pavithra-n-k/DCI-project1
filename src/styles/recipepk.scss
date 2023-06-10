@@ -63,24 +63,25 @@ footer a {
   grid-template-rows: 50% 50%;
   grid-template-areas:
     ". food-image recipe ."
-    ". ingredients recipe .";
+    ". ingredients recipe .";While borshch is made in many countries in Eastern Europe, it is widely considered to have its roots in Ukraine, where many varieties, including a white one, are made. This recipe makes a generous amount, and because it takes some time to prepare, we recommend you freeze portions for whenever you need a hearty meal. The recipe is easily halved, if you prefer. <br>
+    You can use store-bought beef stock, vegetable stock or even water if you don't have two days to make the soup. It won't be as flavorful, but it will still be delicious. The borshch tastes better the next day</p>
 }
 .recipe-name {
   grid-area: zero;
-
+  
   display: grid;
   place-items: center;
 }
 .one {
+
   background-color: skyblue;
   overflow: hidden;
   position: relative;
 }
 .two {
   border: 1px solid black;
-  background-color: rgb(238, 143, 0);
+  background-color: #c77408;
   color: white;
-  height: 100px;
 }
 .food-image {
   grid-area: food-image;
@@ -133,9 +134,9 @@ footer a {
   color: white;
 }
 .card-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+height: 100%;
+width: 100%;
+object-fit: cover;
 }
 .card-title {
   text-transform: uppercase;
@@ -162,7 +163,7 @@ footer a {
   margin: 40px 0;
   font-weight: 500;
 }
-.one:hover .card-body {
+.one:hover .card-body{
   bottom: 0;
 }
 
