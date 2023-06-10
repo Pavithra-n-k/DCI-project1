@@ -15,43 +15,48 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
-   <link rel="stylesheet" href="styles/recipes.scss">
-   <link rel="stylesheet" href="styles/main.scss">
-  
+    <link rel="stylesheet" href="styles/recipes.scss" />
+    <link rel="stylesheet" href="styles/main.scss" />
+
     <title>Recipes</title>
   </head>
   <body>
     <header>
-        <nav class="main-nav">
-          <img class="logo-img" src="../image/logo.png" alt="" />
-          <input type="checkbox" checked="false" id="check" />
-          <label for="check">
-            <i class="fa-solid fa-bars" id="btn"></i>
-          </label>
+      <nav class="main-nav">
+        <img class="logo-img" src="../image/logo.png" alt="" />
+        <input type="checkbox" checked="false" id="check" />
+        <label for="check">
+          <i class="fa-solid fa-bars" id="btn"></i>
+        </label>
 
-          <ul>
-            <li><a href="index.html"> Home</a></li>
-            <li><a href="#">Recipes</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="#">contact</a></li>
-            <!-- <li class="search-container">
+        <ul>
+          <li><a href="index.html"> Home</a></li>
+          <li><a href="#">Recipes</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="#">contact</a></li>
+          <!-- <li class="search-container">
             <input type="text" placeholder="Search" class="search-container" />
           </li> -->
-          </ul>
-        </nav>
+        </ul>
+      </nav>
     </header>
     <main>
       <h1 class="page-header">INTERNATIONAL RECIPES</h1>
 
       <section class="map-image">
-        <div><img class="food-map" src="../image/WORLD FOOD (3).png" alt="food map" /></div>
+        <div>
+          <img
+            class="food-map"
+            src="../image/WORLD FOOD (3).png"
+            alt="food map"
+          />
+        </div>
       </section>
 
-      <section >
+      <section>
         <div class="content">
-        
-          <br>
-          <p class="main-text" >
+          <br />
+          <p class="main-text">
             Embarking on a culinary adventure around the world through
             international food is an exciting experience. <br /><br />
             Exploring the culinary traditions of these countries opens a gateway
@@ -74,7 +79,8 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="food"
+                <img
+                  class="food"
                   src="../image/turkishfood.jpg"
                   alt="turkish flag"
                   style="width: 498px; height: 400px"
@@ -100,7 +106,8 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="food"
+                <img
+                  class="food"
                   src="../image/ukrainianfood.jpg"
                   alt="ukrainian flag"
                   style="width: 498px; height: 400px"
@@ -122,12 +129,13 @@
             </div>
           </div>
         </div>
-       
+
         <div class="item item3">
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="food"
+                <img
+                  class="food"
                   src="../image/rwandanfood.jpg"
                   alt="Rwandan flag"
                   style="width: 498px; height: 400px"
@@ -154,7 +162,8 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="food"
+                <img
+                  class="food"
                   src="../image/indianfood.jpg.jpg"
                   alt="indian flag"
                   style="width: 498px; height: 400px"
@@ -170,7 +179,7 @@
                   traditional desserts like Gulab Jamun, Indian food offers a
                   sensory experience that tantalizes the taste buds.
                 </p>
-                <a href="#">INDIAN RECIPES</a>
+                <a href="./recipepk.html">INDIAN RECIPES</a>
               </div>
             </div>
           </div>
@@ -179,7 +188,8 @@
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <img class="food"
+                <img
+                  class="food"
                   src="../image/jamaicanfood.jpg"
                   alt="jamaican flag"
                   style="width: 500px; height: 400px"
@@ -187,14 +197,14 @@
                 <h1 class="card-title">Jamaica</h1>
               </div>
               <div class="flip-card-back">
-                 <p class="card-rev-text">
+                <p class="card-rev-text">
                   Jamaican cuisine is a flavorful fusion of influences from
                   Africa, Europe, and Asia, resulting in a vibrant culinary
                   heritage. Traditional Jamaican foods include jerk chicken, a
                   spicy and smoky grilled chicken marinated in a combination of
                   scotch bonnet peppers, allspice, thyme, and other seasonings.
-                  For beverages, Jamaican rum is renowned worldwide,
-                  with popular brands like Appleton Estate.
+                  For beverages, Jamaican rum is renowned worldwide, with
+                  popular brands like Appleton Estate.
                 </p>
                 <a href="recipebillie.html">JAMAICAN RECIPES</a>
               </div>
@@ -204,23 +214,27 @@
       </div>
     </section>
 
-    <button class="open-button" onclick="openForm()">CHAT TO ONE OF OUR TEAM</button>
+    <button class="open-button" onclick="openForm()">
+      CHAT TO ONE OF OUR TEAM
+    </button>
 
-<div class="chat-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h1 class="chat-head">Chat</h1>
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1 class="chat-head">Chat</h1>
 
-    <label for="msg"><b>How can we help you?</b></label>
-    <textarea placeholder="Type message.." name="msg" required></textarea>
+        <label for="msg"><b>How can we help you?</b></label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
 
-    <button type="submit" class="btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">
+          Close
+        </button>
+      </form>
+    </div>
 
-<footer
+    <footer
       class="text-center text-lg-start text-white"
-      style="background-color: #C88A36"
+      style="background-color: #c88a36"
     >
       <div class="container p-4 pb-0">
         <section class="">
@@ -300,14 +314,14 @@
       </div>
     </footer>
 
-<script>
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
 
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-</script>
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
   </body>
 </html>

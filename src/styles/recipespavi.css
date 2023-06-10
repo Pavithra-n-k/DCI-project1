@@ -148,14 +148,14 @@ footer img {
 }
 
 .card-img {
-  background: url(../image/nav-bg.jpg);
+  background: url(../../image/Untitled\ design\ \(1\).png);
   background-position: center;
   background-size: cover;
   width: 401px;
   height: 75px;
   margin-top: -31px;
   margin-left: -31px;
-  border-top-left-radius: %;
+  border-top-left-radius: 1%;
 }
 
 .card img {
@@ -278,7 +278,7 @@ body {
   #check:checked ~ ul {
     top: 100%;
 
-    // left: 0;
+   left: 0;
   }
   #check:checked ~ label #btn {
     display: block;
