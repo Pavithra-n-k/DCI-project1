@@ -173,6 +173,8 @@ h2{
         height: 350px;
         width: 350px;
     }
+
+   
 }
 
   
@@ -181,10 +183,9 @@ h2{
         height: 280px;
         width: 280px;
     }
+
+    .card-text {
+      font-size:small;
+    }
 }
 
-// @media (max-width:300px) {
-//      {
-//         height:580px ;
-//     }
-// }
