@@ -1,9 +1,9 @@
 @use "base";
 @use "variables";
-@use "recipes";
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300&display=swap");
 
-// Main Nav
+
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +26,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
+  font-family: "Comfortaa", cursive;
+  color: #764b36;
 }
+
 
 header {
   display: flex;
@@ -45,13 +48,6 @@ header {
 .main-nav {
   background: #c88a36;
 }
-
-
-main {
-  margin-top: 100px;
-}
-
-
 
 nav img {
   height: 130px;
@@ -76,10 +72,6 @@ nav ul li {
   margin: 0 15px;
 }
 
-// nav div {
-//   display: inline-block;
-// }
-
 nav ul li a {
   position: relative;
   color: white;
@@ -87,22 +79,6 @@ nav ul li a {
   padding: 5px 0;
   text-transform: capitalize;
 }
-// nav ul li a::before {
-//   position: absolute;
-//   content: "";
-//   left: 0;
-//   bottom: 0;
-//   height: 100%;
-//   background: white;
-//   transform: scaleX(0);
-//   transform-origin: right;
-// }
-
-// nav ul li a:hover::before {
-//   transform: scaleX(1);
-//   transform-origin: left;
-//   text-decoration: underline;
-// }
 
 a {
   text-decoration: none;
@@ -114,20 +90,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-// label #btn {
-//   color: white;
-//   font-size: 30px;
-//   line-height: 80px;
-//   margin-right: 40px;
-//   float: right;
-//   cursor: pointer;
-//   display: none;
-// }
-
-// label {
-//   float: right;
-// }
-
 
 label .menu {
   position: absolute;
@@ -136,7 +98,7 @@ label .menu {
   z-index: 100;
   width: 200px;
   height: 200px;
-  background:#fff;
+  background:#c88a36;
   border-radius: 50% 50% 50% 50%;
   -webkit-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
@@ -151,7 +113,7 @@ label .hamburger {
   left: 50px;
   width: 30px;
   height: 2px;
-  background: #c88a36;
+  background: #fff;
   display: block;
   -webkit-transform-origin: center;
   transform-origin: center;
@@ -168,7 +130,7 @@ label .hamburger:after, label .hamburger:before {
   display: block;
   width: 100%;
   height: 100%;
-  background: #c88a36;
+  background: #fff;
 }
 
 label .hamburger:before { top: -10px; }
@@ -178,7 +140,7 @@ label .hamburger:after { bottom: -10px; }
 label input { display: none; }
 
 label input:checked + .menu {
-  box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #fff;
+  box-shadow: 0 0 0 100vw #c88a36, 0 0 0 100vh #c88a36;
   border-radius: 0;
   
 }
@@ -220,21 +182,14 @@ label ul {
 label a {
   margin-bottom: 1em;
   display: block;
-  color: #f38630;
+  color: #fff;
   text-decoration: none;
   
 }
 
-// .search-container {
-//   height: 25px;
-//   width: 200px;
-// }
-
-// #check {
-//   display: none;
-// }
-
-// END OF NAV
+main {
+  margin-top: 100px;
+}
 
 .recipe-container {
   display: flex;
@@ -282,17 +237,7 @@ p {
   justify-content: center;
   align-items: center;
 }
-.banner-content h1 {
-  color: rgb(255, 255, 255);
-  font-size: 60px;
-  font-weight: 200;
-}
-.banner-content p {
-  color: rgb(255, 255, 255);
-  font-size: medium;
-  font-weight: 400;
-  margin: 30px 0;
-}
+
 .banner-content {
   width: 100%;
   height: 50vh;
@@ -302,6 +247,21 @@ p {
   flex-direction: column;
   background: rgba(0, 0, 0, 0.6);
 }
+
+.banner-content h1 {
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  font-weight: 200;
+}
+
+.banner-content p {
+  color: rgb(255, 255, 255);
+  font-size: medium;
+  font-weight: 400;
+  margin: 30px 0;
+}
+
+
 .main-banner a {
   border: 2px solid #c88a36;
   border-radius: 6px;
@@ -317,108 +277,8 @@ p {
   background-color: #ffad3a;
 }
 
-// @media (max-width: 1201px) {
-//   .recipe-container {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     flex-wrap: wrap;
-//     margin-bottom: 500px;
-//   }
-// }
-
-// @media (max-width: 769px) {
-  // label #btn {
-  //   display: block;
-  // }
-
-  // .recipe-container {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   flex-wrap: wrap;
-  //   margin-bottom: 500px;
-  // }
-
-  // nav ul {
-  //   display: none;
-  // }
-
-  //  because ul display set to none , we don't need properties below 
-  // nav ul li {
-  //   display: block;
-  //   margin: 50px 0;
-  //   line-height: 30px;
-  // }
-  // nav ul li a {
-  //   font-size: 20px;
-  // }
-  // nav ul li {
-  //   display: block;
-  //   margin: 50px 0;
-  //   line-height: 30px;
-  // }
-  // nav ul li a {
-  //   font-size: 20px;
-  // }
-
-  // #check:checked ~ ul {
-  //   top: 100%;
-
-  //   // left: 0;
-  // }
-  // #check:checked ~ label #btn {
-  //   display: block;
-  // }
-
-  // nav img {
-  //   height: 130px;
-  //   width: 130px;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 3%;
-  //   border-radius: 50%;
-  //   margin-top: 10px;
-  //   z-index: 2;
-  // }
-
-// }
-
-
-// h3 {<ul>
- 
-//   color: white;
-// }
-// footer a:hover {
-//   color: white;
-// }
-// span {
-//   padding-left: 40px;
-// }
-// .email {
-//   padding-left: 10px;
-// }
-// .contact-list li {
-//   color: white;
-// }
-// .fas {
-//   color: #764b36;
-// }
-// .socials:hover {
-//   cursor: pointer;
-// }
-// .logo-footer {
-//   height: 200px;
-//   width: 200px;
-//   margin: 10px;
-// }
-// .page-links:hover {
-//   text-decoration: none;
-// }
 
 .contest-poster {
-  // background-image: url(../../image/nav-bg.jpg);
   padding-top: 100px;
   padding-bottom: 100px;
   display: flex;
@@ -442,27 +302,34 @@ a:hover {
   background: none;
   color: white;
 }
+
 span {
   padding-left: 40px;
 }
+
 .email {
   padding-left: 10px;
 }
+
 .contact-list li {
   color: white;
 }
+
 .fas {
   color: #764b36;
 }
+
 .socials:hover {
   cursor: pointer;
 }
+
 .logo-footer {
   height: 200px;
   width: 200px;
   margin: 10px;
   border-radius: 50%;
 }
+
 .page-links:hover {
   text-decoration: none;
 }
@@ -485,7 +352,28 @@ footer img {
 }
 
 
-@media (min-width: 0px) and (max-width: 767px) {
+
+@media screen and (min-width: 992px) {
+  
+  #headerIcon {
+   
+    display: none;
+  }
+ 
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-nav {
+    ul {
+      display: none;
+    }
+ 
+  }
+
+}
+
+
+@media (max-width: 767px) {
   .main-nav {
     ul {
       display: none;
@@ -509,14 +397,27 @@ footer img {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 500px;
+    margin-bottom: 50px;
   }
 
+  .contest-poster {
+    padding-top: 15px;
+    padding-bottom: 100px;
+  }
 
+  .contest-poster img {
+    width: 360px ;
+    height:508px ;
+  }
+  .contest-poster {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width:577px) {
+
   .main-nav {
     ul {
       display: none;
@@ -524,14 +425,63 @@ footer img {
  
   }
 
+  nav img {
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    top: 0;
+    left: 3%;
+    border-radius: 50%;
+    margin-top: 10px;
+    z-index: 2;
+  }
+
+  .recipe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  .contest-poster {
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+  .contest-poster img {
+    width: 240px ;
+    height:339px ;
+  }
+ .contact-info {
+    display: none;
+ }
+
+ .links {
+  display: none;
+ }
+
+ .comp-logo {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+.banner-content {
+  text-align: center;
+ 
 }
 
-@media screen and (min-width: 992px) {
-  
-  #headerIcon {
-   
-    display: none;
-  }
- 
+.banner-content h1 {
+  margin-top: 100px;
+}
+
+ .footer-container {
+  justify-content: space-around;
+ }
+
+ .logo-footer {
+  width: 130px;
+  height: 130px;
+ }
 
 }
