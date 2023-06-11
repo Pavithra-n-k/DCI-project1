@@ -361,6 +361,7 @@ footer img {
   }
  
 
+
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .main-nav {
@@ -368,6 +369,11 @@ footer img {
       display: none;
     }
  
+  }
+
+  .contest-poster img {
+    width: 450px ;
+    height:635px ;
   }
 
 }
