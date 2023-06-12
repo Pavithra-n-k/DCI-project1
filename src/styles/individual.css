@@ -166,7 +166,7 @@ footer {
   bottom: 0;
 }
 
-@media (width <= 768px) {
+@media (max-width: 768px) {
   body {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
