@@ -225,13 +225,11 @@ body {
     display: grid;
     place-items: center;
     grid-area: ingredients;
-    border: 1px solid black;
     background-color: white;
     overflow: scroll;
   }
   .recipe {
     grid-area: recipe;
-    border: 1px solid black;
     background-color: white;
     display: grid;
     place-items: center;
