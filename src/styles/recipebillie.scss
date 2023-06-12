@@ -94,7 +94,7 @@ body {
   
   .food-image {
     grid-area: food-image;
-    border: 1px solid black;
+    border-radius: 15px;
     background-color: white;
     display: grid;
     place-items: center;
@@ -103,13 +103,13 @@ body {
     display: grid;
     place-items: center;
     grid-area: ingredients;
-    border: 1px solid black;
+   
     background-color: white;
     overflow: scroll;
   }
   .recipe {
     grid-area: recipe;
-    border: 1px solid black;
+   
     background-color: white;
     display: grid;
     place-items: center;
@@ -123,6 +123,12 @@ body {
   .section22 {
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-top: 30px;
+  }
+  .jerk-recipe{
+    color: #555;
+    text-align: center;
+    padding-right: 20px;
   }
   .card-body {
     width: 100%;
