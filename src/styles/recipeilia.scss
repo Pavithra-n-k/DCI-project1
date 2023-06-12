@@ -42,7 +42,7 @@ body {
     color: white;
   }
   .container1 {
-    height: 80vh;
+    height: 60vh;
     grid-area: container1;
     display: grid;
     grid-template-columns: auto;
@@ -52,6 +52,7 @@ body {
       "one"
       "two";
     gap: 20px;
+    margin-top: 150px;
   }
   .container2 {
     height: 80vh;
@@ -160,7 +161,7 @@ body {
     bottom: 0;
   }
 
-  @media (width <= 768px) {
+  @media (width <= 860px) {
     body {
       grid-template-columns: 1fr;
       grid-template-rows: auto auto auto auto;
@@ -178,5 +179,10 @@ body {
         "food-image"
         "ingredients"
         "recipe";
+    }
+  }
+  @media (width <= 768px) {
+    .card-body{
+     display: none;
     }
   }

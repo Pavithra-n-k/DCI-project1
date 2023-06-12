@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jamaican Recipe</title>
     <link rel="stylesheet" href="./styles/recipebillie.scss" />
-    <link rel="stylesheet" href="styles/main.scss" />
+ <link rel="stylesheet" href="./styles/recipedidier.scss">
+    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles/main.scss" />
     <link
     href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
     rel="stylesheet"
@@ -23,21 +25,28 @@
 />
   </head>
   <body>
-      <header>
-        <nav class="main-nav">
-          <img class="logo-img" src="../image/logo.png" alt="" />
-          <input type="checkbox" checked="false" id="check" />
-          <label for="check">
-            <i class="fa-solid fa-bars" id="btn"></i>
-          </label>
-          <ul>
-            <li><a href="index.html"> Home</a></li>
+    <header>
+      <nav class="main-nav">
+        <img src="../image/logo.png" alt="" />
+        <ul>
+          <li><a href="./index.html"> Home</a></li>
           <li><a href="./recipes.html">Recipes</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./contacts.html">Contact</a></li>
           <li><a href="./competition.html">Competition</a></li>
-          </ul>
-        </nav>
+        </ul>
+      </nav>
+      <label id="headerIcon">
+        <input type="checkbox">
+        <span class="menu"> <span class="hamburger"></span> </span>
+        <ul>
+          <li><a href="./index.html"> Home</a></li>
+          <li><a href="./recipes.html">Recipes</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contacts.html">Contact</a></li>
+          <li><a href="./competition.html">Competition</a></li>
+        </ul>
+        </label>
     </header>
 
     <section class="container1">
@@ -57,9 +66,7 @@
             Rice cooked with coconut milk, thyme, and kidney beans accompanies
             the chicken, providing a creamy and rich texture. The dish has its
             roots in the indigenous Taino people's cooking methods and was
-            further developed by African slaves. Today, jerk chicken with rice
-            and peas is beloved worldwide for its distinctive and spicy flavors,
-            showcasing the vibrant and delicious cuisine of the Caribbean.
+            further developed by African slaves. 
           </p>
         </div>
       </div>
@@ -100,15 +107,17 @@
           
           Whatever your views about jerk – it’s still one of the best marinades for grilling meat, like jerk chicken!…</p> -->
         <h1>METHOD</h1>
-        <ol><li>Make the jerk marinade: Put all the ingredients in a blender and blitz until it’s a smooth paste. NB: Scotch bonnets are very hot chillies. You can cut back on these but remember the overall balance of flavours will need some heat. Try putting in one chilli to begin with and taste. Add another if it needs it.</li>
+        <ol class="jerk-recipe"><li>Make the jerk marinade: Put all the ingredients in a blender and blitz until it’s a smooth paste. NB: Scotch bonnets are very hot chillies. You can cut back on these but remember the overall balance of flavours will need some heat. Try putting in one chilli to begin with and taste. Add another if it needs it.</li>
           <br>
-        <li>Marinate the chicken:Massage the jerk into the meat and allow to marinate in the fridge for 2 – 4 hours. NB: Some recipes say to slash the meat to allow the marinade to get into the chicken, which might also help cook the inside of the chicken. I don’t do this preferring to try to keep as many of the juices inside the meat as possible.</li>
+        <li>Marinate the chicken: Massage the jerk into the meat and allow to marinate in the fridge for 2 – 4 hours. NB: Some recipes say to slash the meat to allow the marinade to get into the chicken, which might also help cook the inside of the chicken. I don’t do this preferring to try to keep as many of the juices inside the meat as possible.</li>
         <br>
         <li>Make the rice and peas.  Add the rice to a thick bottomed pan and fry for 5 minutes. Meanwhile, put the coconut milk and an additional 275ml water into a pan and bring to a simmer. When the rice has been frying for 5 minutes add the liquid and bring this to the boil quickly – then immediately set at the lowest heat and secure the lid tightly. Cook for 20 minutes. While the rice is cooking, heat the kidney beans in their water until very hot. When the rice has been cooking for 20 minutes add the beans and stir the rice. Turn off the heat and let the rice sit for 15 minutes. Stir just before serving.</li>
         <br>
-        <li>Cook the chicken: If using a barbecue, cook the chicken gently to start. This is best done using indirect heat with a covered barbecue – or with the grill set on a high setting above the coals on an uncovered barbecue. The challenge with boned chicken thighs is getting the inside cooked before the outside gets too charred. This actually requires a bit of skill and patience. Let the chicken cook for about 25 minutes turning often and basting with marinade. then grill on a higher heat to chargrill the chicken for about 5 – 10 minutes, being careful not to cause too many flames with dripping fat. Test a piece of chicken by probing with a knife to see if it is still pink inside or runs with pink juices. Continue cooking until thoroughly cooked. If using an oven, place in an ovenproof dish and cook in a medium oven (189C, Gas 4) for about 35-45 minutes or until the chicken is thoroughly cooked.</li>
+        <li>Cooking the chicken: If using a barbecue, cook the chicken gently to start. This is best done using indirect heat with a covered barbecue – or with the grill set on a high setting above the coals on an uncovered barbecue. The challenge with boned chicken thighs is getting the inside cooked before the outside gets too charred. This actually requires a bit of skill and patience. Let the chicken cook for about 25 minutes turning often and basting with marinade. then grill on a higher heat to chargrill the chicken for about 5 – 10 minutes, being careful not to cause too many flames with dripping fat. Test a piece of chicken by probing with a knife to see if it is still pink inside or runs with pink juices. Continue cooking until thoroughly cooked. If using an oven, place in an ovenproof dish and cook in a medium oven (189C, Gas 4) for about 35-45 minutes or until the chicken is thoroughly cooked.</li>
         <br>
         <li>Serve the chicken with the rice and peas, green salad and jerk sauce if desired.</li> </ol>
+
+        <h4>ENJOY <i class="fa-solid fa-face-smile"></i> </h4>
         
       </div>
     </section>

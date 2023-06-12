@@ -175,11 +175,10 @@ body {
     grid-area: container1;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 7% 60% auto;
+    grid-template-rows: 7% auto;
     grid-template-areas:
       "zero"
-      "one"
-      "two";
+      "one";
     gap: 20px;
     margin-top: 150px;
   }
@@ -307,12 +306,19 @@ body {
   }
   .section2 {
     margin-right: 20px;
+    margin-left: 20px;
     margin-bottom: 20px;
     margin-top: 20px;
   }
   .section22 {
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .section22 ol {
+    padding: 0 10px;
   }
   .card-body {
     width: 100%;
@@ -361,7 +367,7 @@ body {
     bottom: 0;
   }
 
-  @media (width <= 768px) {
+  @media (width <= 860px) {
     body {
       grid-template-columns: 1fr;
       grid-template-rows: auto auto auto auto;
@@ -371,6 +377,7 @@ body {
         "container2"
         "footer";
     }
+    
     .container2 {
       background-color: white;
       grid-template-columns: 1fr;
@@ -379,5 +386,10 @@ body {
         "food-image"
         "ingredients"
         "recipe";
+    }
+  }
+  @media (width <= 768px) {
+    .card-body{
+     display: none;
     }
   }
