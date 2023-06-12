@@ -357,7 +357,7 @@ textarea {
   position: fixed;
   bottom: 15px;
   right: 20px;
-  width: 280px;
+  width: 240px;
 }
 
 .chat-popup {
@@ -518,5 +518,13 @@ b {
     "form"
     "footer";
   }
+}
+
+@media (max-width:577px) {
+ 
+  .open-button {
+    width: 120px;
+   }
+  
 }
 

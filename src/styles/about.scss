@@ -88,7 +88,7 @@ h2{
     position: fixed;
     bottom: 15px;
     right: 20px;
-    width: 280px;
+    width: 240px;
   }
   
   .chat-popup {
@@ -188,5 +188,10 @@ h2{
     .card-text {
       font-size:small;
     }
+
+    .open-button {
+      width: 120px;
+     }
+    
 }
 
