@@ -166,10 +166,19 @@ a:hover {
   text-decoration: underline;
 }
 
+.rec-link:hover {
+  text-decoration: underline;
+  font-size: 25px;
+  text-shadow: 5px 5px 6px #c88a36;
+}
+
+// CHAT BOX
 .open-button {
+  font-family:"Comfortaa", cursive;
+  font-weight: 900;
   background-color: #9b4922;
   color: white;
-  padding: 16px 20px;
+  padding: 20px 20px;
   border-radius: 15px;
   border: 3px solid #c88a36;
   cursor: pointer;
@@ -184,21 +193,23 @@ a:hover {
   position: fixed;
   bottom: 0;
   right: 15px;
-  border: 3px solid #f1f1f1;
+  border: 3px solid #c88a36;
+  border-radius: 15px;
   z-index: 9;
 }
 
 .form-container {
   max-width: 300px;
   padding: 10px;
-  background-color: white;
+  background-color: #9b4922;
+  border-radius: 15px;
 }
 
 .form-container textarea {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
-  border: 2px solid orange;
+  border: 2px solid #c88a36;
   background: white;
   resize: none;
   min-height: 200px;
@@ -211,6 +222,7 @@ a:hover {
 
 .form-container .btn {
   background-color: orange;
+  font-weight: 900;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -229,10 +241,10 @@ a:hover {
   opacity: 1;
 }
 .chat-head {
-  color: orange;
+  color:white;
 }
 b {
-  color: orange;
+  color: white;
 }
 ::placeholder {
   color: white;
@@ -241,7 +253,6 @@ b {
 // FOOTER
 
 .footer-container {
-  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -257,7 +268,6 @@ h3 {
 a:hover {
   text-decoration: none;
   color: white;
-  background-color: #9b4922;
 }
 
 span {
@@ -287,6 +297,12 @@ span {
 
 .page-links:hover {
   text-decoration: none;
+}
+
+@media (max-width: 860px) {
+  .grid-container {
+    display: block;
+  }
 }
 // @media (min-width: 1117px) {
 // }
