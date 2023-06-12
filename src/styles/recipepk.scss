@@ -1,195 +1,98 @@
-body {
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  grid-template-areas:
-    "header header header"
-    ". container1 ."
-    "container2 container2 container2"
-    "footer footer footer";
-  grid-template-columns: 10vw auto 10vw;
-  grid-template-rows: auto auto auto auto;
-}
-header {
-  grid-area: header;
-  z-index: 1000;
-}
-.header-part1 {
-  height: 6vh;
-  border: 1px solid black;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-}
-.header-part2 {
-  height: 20vh;
-  background-color: black;
-  margin-top: 60px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-footer {
-  border: 1px solid black;
-  color: white;
-  display: flex;
-  justify-content: center;
-  grid-area: footer;
-}
-footer a {
-  color: white;
-}
-.container1 {
-  height: 80vh;
-  grid-area: container1;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 7% 60% auto;
-  grid-template-areas:
-    "zero"
-    "one"
-    "two";
-  gap: 20px;
-}
-.container2 {
-  height: 80vh;
-  background-color: rgba(255, 255, 232, 0.616);
-  grid-area: container2;
-  display: grid;
-  grid-template-columns: 10vw auto 35% 10vw;
-  grid-template-rows: 50% 50%;
-  grid-template-areas:
-    ". food-image recipe ."
-    ". ingredients recipe .";
-}
-
-div.section2.food-image {
-  color: red;
-  background-image: url(../../image/butter-chicken--750x750.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.recipe-name {
-  grid-area: zero;
-
-  display: grid;
-  place-items: center;
-}
 .one {
-  background-color: skyblue;
-  overflow: hidden;
-  position: relative;
-}
-.two {
-  border: 1px solid black;
-  background-color: #c77408;
-  color: white;
-}
-.food-image {
-  grid-area: food-image;
-  border: 1px solid black;
-  background-image: url(../../image/butter-chicken--750x750.jpg);
-  display: grid;
+  background-image: url(../../image/568204d10821e9ba59c662fcbd18fb10_15min-butter_chicken-photo-final-1-16x9_1500_700.jpg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   place-items: center;
+  border-radius: 10px;
+}
+
+.food-image {
+  background-image: url(../../image/butter-chicken--750x750.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.open-button {
+  background-color: #9b4922;
+  color: white;
+  padding: 16px 20px;
+  border-radius: 15px;
+  border: 3px solid #c88a36;
+  cursor: pointer;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  width: 280px;
+}
+
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 2px solid orange;
+  background: white;
+  resize: none;
+  min-height: 200px;
+}
+
+.form-container textarea:focus {
+  background-color: orange;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: orange;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+.chat-head {
+  color: orange;
+}
+
+b {
+  color: orange;
+}
+
+::placeholder {
+  color: white;
 }
 .ingredients {
-  display: grid;
-  place-items: center;
-  grid-area: ingredients;
-  border: 1px solid black;
-  background-color: white;
-  overflow: scroll;
+  border: white;
 }
 .recipe {
-  grid-area: recipe;
-  border: 1px solid black;
-  background-color: white;
-  display: grid;
-  place-items: center;
-  overflow: scroll;
-  padding: auto;
-}
-.section2 {
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.section22 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.card-body {
-  width: 100%;
-  height: 100%;
-  bottom: -100%;
-  right: 0;
-  position: absolute;
-  background: #1f3d4738;
-  backdrop-filter: blur(5px);
-  color: white;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: 2s;
-}
-.card-body h1 {
-  color: white;
-}
-.card-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.card-title {
-  text-transform: uppercase;
-  font-size: 50px;
-  font-weight: 600;
-  color: white;
-}
-.card-sub-title {
-  color: white;
-  text-transform: capitalize;
-
-  font-size: 34px;
-  font-weight: 700;
-
-  font-size: 14px;
-  font-weight: 300;
-
-  margin: 10px 0;
-}
-.card-info {
-  color: white;
-  font-size: 16px;
-  line-height: 22px;
-  margin: 40px 0;
-  font-weight: 500;
-}
-.one:hover .card-body {
-  bottom: 0;
-}
-
-@media (width <= 768px) {
-  body {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:
-      "header"
-      "container1"
-      "container2"
-      "footer";
-  }
-  .container2 {
-    background-color: white;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-      "food-image"
-      "ingredients"
-      "recipe";
-  }
+  border: white;
+  padding: 50px;
 }
