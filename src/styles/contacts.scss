@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -15,13 +16,13 @@ body {
 }
 
 
-.nav_container {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+// .nav_container {
+//   padding: 20px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-around;
   
-}
+// }
 
 /* .footer {
     position: relative;
@@ -45,22 +46,22 @@ body {
 
 }
 
-.contact-info {
-  float: right;
-  margin-right: 20px;
-  line-height: 80px;
-}
+// .contact-info {
+//   float: right;
+//   margin-right: 20px;
+//   line-height: 80px;
+// }
 
-.contact-info span {
-  margin-left: 10px;
-}
+// .contact-info span {
+//   margin-left: 10px;
+// }
 
-footer {
-  color: white;
-}
-footer a {
-  color: white;
-}
+// footer {
+//   color: white;
+// }
+// footer a {
+//   color: white;
+// }
 
 /* Contact form */
 .contact-form {
@@ -155,111 +156,231 @@ footer a {
 
 }
 
-.footer-logo {
-  height: 200px;
-}/*# sourceMappingURL=contacts.css.map */
-
-header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 2;
-}
-main {
-  margin-top: 100px;
-}
-
-nav {
-  height: 100px;
-  background: #c88a36;
-  font-family: "Cherry Bomb One", cursive;
-}
-nav img {
-  height: 100px;
-  width: 100px;
-  position: absolute;
-  top: 0;
-  left: 3%;
-}
-nav ul {
-  float: right;
-  margin-right: 25px;
-}
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 15px;
-}
-nav div {
-  display: inline-block;
-}
-nav ul li a {
-  position: relative;
+.open-button {
+  background-color: #9B4922;
   color: white;
-  font-size: 18px;
-  padding: 5px 0;
-  text-transform: capitalize;
-
-}
-nav ul li a::before {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  height: 100%;
-  background: white;
-  transform: scaleX(0);
-  transform-origin: right;
-
-}
-nav ul li a:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-label #btn,
-label #cancel {
-  color: white;
-  font-size: 30px;
-  line-height: 80px;
-  margin-right: 40px;
-  float: right;
+  padding: 16px 20px;
+  border-radius: 15px;
+  border: 3px solid #C88A36;
   cursor: pointer;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  width: 240px;
+}
+
+.chat-popup {
   display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
 }
-label {
-  float: right;
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
 }
-@media (min-width: 1117px) {
+
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: 2px solid orange;
+  background: white;
+  resize: none;
+  min-height: 200px;
 }
-@media (max-width: 1118px) {
+
+.form-container textarea:focus {
+  background-color: orange;
+  outline: none;
 }
-@media (max-width: 500px) {
-  label #btn {
-    display: block;
-  }
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: #C88A36;
-    top: 100px;
-    left: 0;
-    text-align: center;
-  }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a {
-    font-size: 20px;
-  }
-  #check:checked ~ ul {
-    top: 100%;
-     left: 0;
-  }
-  #check:checked ~ label #btn {
-    display: block;
-  }
+
+.form-container .btn {
+  background-color: orange;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
 }
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.chat-head {
+  color: orange;
+}
+
+b {
+  color: orange;
+}
+
+::placeholder {
+  color: white;
+}
+
+
+
+@media (max-width:577px) {
+  .contact-form {
+    width: 350px;
+    
+}
+.open-button {
+  width: 120px;
+ }
+
+
+}
+
+@media (max-width:350px) {
+  .contact-form {
+    width: 300px;
+    
+}
+}
+
+// .footer-logo {
+//   height: 200px;
+// }/*# sourceMappingURL=contacts.css.map */
+
+// header {
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   left: 0;
+//   z-index: 2;
+// }
+// main {
+//   margin-top: 100px;
+// }
+
+// nav {
+//   height: 100px;
+//   background: #c88a36;
+//   font-family: "Cherry Bomb One", cursive;
+// }
+// nav img {
+//   height: 100px;
+//   width: 100px;
+//   position: absolute;
+//   top: 0;
+//   left: 3%;
+// }
+// nav ul {
+//   float: right;
+//   margin-right: 25px;
+// }
+// nav ul li {
+//   display: inline-block;
+//   line-height: 80px;
+//   margin: 0 15px;
+// }
+// nav div {
+//   display: inline-block;
+// }
+// nav ul li a {
+//   position: relative;
+//   color: white;
+//   font-size: 18px;
+//   padding: 5px 0;
+//   text-transform: capitalize;
+
+// }
+// nav ul li a::before {
+//   position: absolute;
+//   content: "";
+//   left: 0;
+//   bottom: 0;
+//   height: 100%;@media (min-width: 1117px) {
+// }
+// @media (max-width: 1118px) {
+// }
+// @media (max-width: 500px) {
+//   label #btn {
+//     display: block;
+//   }
+//   ul {
+//     position: fixed;
+//     width: 100%;
+//     height: 100vh;
+//     background-color: #C88A36;
+//     top: 100px;
+//     left: 0;
+//     text-align: center;
+//   }
+//   nav ul li {
+//     display: block;
+//     margin: 50px 0;
+//     line-height: 30px;
+//   }
+//   nav ul li a {
+//     font-size: 20px;
+//   }
+//   #check:checked ~ ul {
+//     top: 100%;
+//      left: 0;
+//   }
+//   #check:checked ~ label #btn {
+//     display: block;
+//   }
+// }
+// }
+// label #btn,
+// label #cancel {
+//   color: white;
+//   font-size: 30px;
+//   line-height: 80px;
+//   margin-right: 40px;
+//   float: right;
+//   cursor: pointer;
+//   display: none;
+// }
+// label {
+//   float: right;
+// }
+// @media (min-width: 1117px) {
+// }
+// @media (max-width: 1118px) {
+// }
+// @media (max-width: 500px) {
+//   label #btn {
+//     display: block;
+//   }
+//   ul {
+//     position: fixed;
+//     width: 100%;
+//     height: 100vh;
+//     background-color: #C88A36;
+//     top: 100px;
+//     left: 0;
+//     text-align: center;
+//   }
+//   nav ul li {
+//     display: block;
+//     margin: 50px 0;
+//     line-height: 30px;
+//   }
+//   nav ul li a {
+//     font-size: 20px;
+//   }
+//   #check:checked ~ ul {
+//     top: 100%;
+//      left: 0;
+//   }
+//   #check:checked ~ label #btn {
+//     display: block;
+//   }
+// }
+
