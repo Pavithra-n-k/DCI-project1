@@ -28,15 +28,16 @@
         <label for="check">
           <i class="fa-solid fa-bars" id="btn"></i>
         </label>
-
         <ul>
-          <li><a href="index.html"> Home</a></li>
-          <li><a href="#">Recipes</a></li>
+          <li><a href="./index.html"> Home</a></li>
+          <li><a href="./recipes.html">Recipes</a></li>
           <li><a href="./about.html">About</a></li>
-          <li><a href="#">contact</a></li>
+
+          <li><a href="./contacts.html">contact</a></li>
+          <li><a href="./competition.html">competition</a></li>
           <!-- <li class="search-container">
-            <input type="text" placeholder="Search" class="search-container" />
-          </li> -->
+          <input type="text" placeholder="Search" class="search-container" />
+        </li> -->
         </ul>
       </nav>
     </header>
@@ -97,7 +98,7 @@
                   vegetarians alike, showcasing the country's rich culinary
                   heritage.
                 </p>
-                <a href="./recipeselma.html">TURKISH RECIPES</a>
+                <a class="rec-link" href="recipeselma.html">TURKISH RECIPES</a>
               </div>
             </div>
           </div>
@@ -124,7 +125,7 @@
                   ingredients like mushrooms, dill, and sour cream, adding a
                   unique and delightful touch to traditional Ukrainian meals.
                 </p>
-                <a href="recipeilia.html">UKRAINAN RECIPES</a>
+                <a class="rec-link" href="recipeilia.html">UKRAINAN RECIPES</a>
               </div>
             </div>
           </div>
@@ -153,7 +154,9 @@
                   pineapples, and leafy greens, adding a delightful touch to
                   every meal.
                 </p>
-                <a href="./recipedidier.html">RWANDAN RECIPES</a>
+                <a class="rec-link" href="./recipedidier.html"
+                  >RWANDAN RECIPES</a
+                >
               </div>
             </div>
           </div>
@@ -173,13 +176,14 @@
               <div class="flip-card-back">
                 <p class="card-rev-text">
                   Indian cuisine is renowned for its rich and diverse flavors,
-                  combining aromatic spices, such as cumin, turmeric, and
-                  cardamom, to create a symphony of tastes. From the fiery heat
-                  of a perfectly spiced curry to the delicate sweetness of
-                  traditional desserts like Gulab Jamun, Indian food offers a
-                  sensory experience that tantalizes the taste buds.
+                  combining aromatic spices to create a symphony of tastes. From
+                  the fiery heat of a perfectly spiced curry to the delicate
+                  sweetness of traditional desserts like Gulab Jamun, Indian
+                  food offers a sensory experience that tantalizes the taste
+                  buds. Each bite is a delightful journey through a spectrum of
+                  flavors, leaving a lasting impression on every palate.
                 </p>
-                <a href="./recipepk.html">INDIAN RECIPES</a>
+                <a class="rec-link" href="recipepk.html">INDIAN RECIPES</a>
               </div>
             </div>
           </div>
@@ -206,7 +210,9 @@
                   For beverages, Jamaican rum is renowned worldwide, with
                   popular brands like Appleton Estate.
                 </p>
-                <a href="recipebillie.html">JAMAICAN RECIPES</a>
+                <a class="rec-link" href="recipebillie.html"
+                  >JAMAICAN RECIPES</a
+                >
               </div>
             </div>
           </div>
@@ -215,7 +221,8 @@
     </section>
 
     <button class="open-button" onclick="openForm()">
-      CHAT TO ONE OF OUR TEAM
+      Chat to one of our team
+      <i class="fa-solid fa-comments" style="color: #ffffff"></i>
     </button>
 
     <div class="chat-popup" id="myForm">
@@ -223,7 +230,11 @@
         <h1 class="chat-head">Chat</h1>
 
         <label for="msg"><b>How can we help you?</b></label>
-        <textarea placeholder="Type message.." name="msg" required></textarea>
+        <textarea
+          placeholder="Type your message.."
+          name="msg"
+          required
+        ></textarea>
 
         <button type="submit" class="btn">Send</button>
         <button type="button" class="btn cancel" onclick="closeForm()">
@@ -232,96 +243,77 @@
       </form>
     </div>
 
-    <footer
-      class="text-center text-lg-start text-white"
-      style="background-color: #c88a36"
-    >
-      <div class="container p-4 pb-0">
-        <section class="">
-          <div class="row">
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h6 class="text-uppercase mb-3 ml-5 font-weight-bold">
-                The Recipe Box
-              </h6>
-              <img class="footer-logo" src="../image/logo.png" alt="logo" />
-            </div>
-            <hr class="w-100 clearfix d-md-none" />
-            <hr class="w-100 clearfix d-md-none" />
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
-              <a href="recipes.html" target="_blank">Recipes</a>
-              <a href="" target="_blank">Competiton</a> <br />
-              <a href="about.html" target="_blank">About</a> <br />
-              <a href="contacts.html" target="_blank">Contact</a>
-            </div>
-            <hr class="w-100 clearfix d-md-none" />
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-              <p>
-                <i class="fas fa-home mr-3"></i> 145 Topfstrasse, <br />
-                Berlin 13867
-              </p>
-              <p>
-                <i class="fas fa-envelope mr-3"></i>
-                <a href="mailto:info@recipe-box.com">info@recipe-box.com</a>
-              </p>
-              <p>
-                <i class="fas fa-phone mr-3"></i> <a href=""></a> + (49) 153
-                42676897
-              </p>
-            </div>
-          </div>
+    <footer id="footer-main">
+      <div class="footer-container">
+        <section class="comp-logo">
+          <h3>THE RECIPE BOX</h3>
+          <img class="logo-footer" src="../image/logo.png" alt="logo" />
         </section>
-        <hr class="my-3" />
-        <section class="p-3 pt-0">
-          <div class="row d-flex align-items-center">
-            <div class="col-md-7 col-lg-8 text-center text-md-start">
-              <div class="p-3">
-                © 2023 Copyright:
-                <a class="text-white" href="https://TheReceipeBox.com/"
-                  >TheReceipeBox.com</a
-                >
-              </div>
-            </div>
-            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-              <a
-                class="btn btn-outline-light btn-floating m-1"
-                class="text-white"
-                role="button"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a
-                class="btn btn-outline-light btn-floating m-1"
-                class="text-white"
-                role="button"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a
-                class="btn btn-outline-light btn-floating m-1"
-                class="text-white"
-                role="button"
-                ><i class="fab fa-google"></i
-              ></a>
-              <a
-                class="btn btn-outline-light btn-floating m-1"
-                class="text-white"
-                role="button"
-                ><i class="fab fa-instagram"></i
-              ></a>
-            </div>
-          </div>
+        <section class="links">
+          <h3>USEFUL LINKS</h3>
+          <ul class="page-links">
+            <a href="./index.html">Home</a>
+            <br />
+            <a href="./recipes.html">Recipes</a>
+            <br />
+            <a href="./competition.html">Competiton</a>
+            <br />
+            <a href="./about.html">About</a>
+            <br />
+            <a href="./contacts.html">Contact</a>
+          </ul>
+        </section>
+        <section class="contact-info">
+          <h3>CONTACT</h3>
+          <ul class="contact-list">
+            <li>
+              <i class="fas fa-home mr-3"></i> Topfstrasse 145 <br />
+              <span>Berlin 13867</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope mr-3"></i
+              ><a class="email" href="mailto:info@recipe-box.com"
+                >info@recipe-box.com</a
+              >
+            </li>
+            <li><i class="fas fa-phone mr-3"></i> + (49) 153 42676897</li>
+          </ul>
+        </section>
+        <section class="copyright">
+          © 2023 Copyright <br />
+          <a class="text-white" href="https://TheReceipeBox.com/"
+            >TheReceipeBox.com</a
+          >
+        </section>
+        <section class="socials">
+          <a class="btn btn-outline-light btn-floating m-1" role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a class="btn btn-outline-light btn-floating m-1" role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a class="btn btn-outline-light btn-floating m-1" role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+          <a class="btn btn-outline-light btn-floating m-1" role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
         </section>
       </div>
     </footer>
-
     <script>
-      function openForm() {
-        document.getElementById("myForm").style.display = "block";
-      }
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
 
-      function closeForm() {
-        document.getElementById("myForm").style.display = "none";
-      }
+      <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
     </script>
   </body>
 </html>
