@@ -41,25 +41,29 @@
   </head>
   <body>
     <header>
-      <header>
-        <nav class="main-nav">
-          <img src="../image/logo.png" alt="" />
-          <input type="checkbox" checked="false" id="check" />
-          <label for="check">
-            <i class="fa-solid fa-bars" id="btn"></i>
-          </label>
-          <ul>
-            <li><a href="./index.html"> Home</a></li>
-            <li><a href="./recipes.html">Recipes</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contacts.html">contact</a></li>
-            <li><a href="./competition.html">competition</a></li>
-            <!-- <li class="search-container">
-              <input type="text" placeholder="Search" class="search-container" />
-            </li> -->
-          </ul>
-        </nav>
-      </header>
+      <nav class="main-nav">
+        <img src="../image/logo.png" alt="" />
+        <ul>
+          <li><a href="./index.html"> Home</a></li>
+          <li><a href="./recipes.html">Recipes</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contacts.html">Contact</a></li>
+          <li><a href="./competition.html">Competition</a></li>
+        </ul>
+      </nav>
+    
+      <label id="headerIcon">
+        <input type="checkbox">
+        <span class="menu"> <span class="hamburger"></span> </span>
+        <ul>
+          <li><a href="./index.html"> Home</a></li>
+          <li><a href="./recipes.html">Recipes</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contacts.html">Contact</a></li>
+          <li><a href="./competition.html">Competition</a></li>
+        </ul>
+        </label>
+  
     </header>
 
     <section class="container1">
@@ -155,7 +159,8 @@
       </div>
     </section>
     <button class="open-button" onclick="openForm()">
-      CHAT TO ONE OF OUR TEAM
+      Chat to one of our team
+      <i class="fa-solid fa-comments" style="color: #FFFFFF"></i>
     </button>
 
     <div class="chat-popup" id="myForm">
