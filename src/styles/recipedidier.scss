@@ -361,7 +361,7 @@ body {
     bottom: 0;
   }
 
-  @media (width <= 768px) {
+  @media (width <= 860px) {
     body {
       grid-template-columns: 1fr;
       grid-template-rows: auto auto auto auto;
@@ -371,6 +371,7 @@ body {
         "container2"
         "footer";
     }
+    
     .container2 {
       background-color: white;
       grid-template-columns: 1fr;
