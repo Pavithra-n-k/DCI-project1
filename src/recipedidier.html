@@ -36,26 +36,29 @@
   />
   </head>
   <body>
+
     <header>
-      <header>
-        <nav class="main-nav">
-            <img src="../image/logo.png" alt="" />
-            <input type="checkbox" checked="false" id="check" />
-            <label for="check">
-              <i class="fa-solid fa-bars" id="btn"></i>
-            </label>
-            <ul>
-              <li><a href="./index.html"> Home</a></li>
-              <li><a href="./recipes.html">Recipes</a></li>
-              <li><a href="./about.html">About</a></li>
-              <li><a href="./contacts.html">contact</a></li>
-              <li><a href="./competition.html">competition</a></li>
-              <!-- <li class="search-container">
-              <input type="text" placeholder="Search" class="search-container" />
-            </li> -->
-            </ul>
-          </nav>
-    </header>
+      <nav class="main-nav">
+        <img src="../image/logo.png" alt="" />
+        <ul>
+          <li><a href="./index.html"> Home</a></li>
+          <li><a href="./recipes.html">Recipes</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contacts.html">Contact</a></li>
+          <li><a href="./competition.html">Competition</a></li>
+        </ul>
+      </nav>
+      <label id="headerIcon">
+        <input type="checkbox">
+        <span class="menu"> <span class="hamburger"></span> </span>
+        <ul>
+          <li><a href="./index.html"> Home</a></li>
+          <li><a href="./recipes.html">Recipes</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contacts.html">Contact</a></li>
+          <li><a href="./competition.html">Competition</a></li>
+        </ul>
+        </label>
     </header>
 
     <section class="container1">
@@ -121,52 +124,53 @@
     </div>
 
     <!-- FOOTER HTML -->
-  <footer id="footer-main">
-    <div class="footer-container">
-      <section class="comp-logo">
-        <h3>THE RECIPE BOX</h3>
-        <img class="logo-footer" src="../image/logo.png" alt="logo" />
-      </section>
-      <section class="links">
-        <h3>USEFUL LINKS</h3>
-        <ul class="page-links">
-          <a href="./index.html">Home</a>
-          <br />
-          <a href="./recipes.html">Recipes</a>
-          <br />
-          <a href="./competition.html">Competiton</a>
-          <br />
-          <a href="./about.html">About</a>
-          <br />
-          <a href="./contacts.html">Contact</a>
-        </ul>
-      </section>
-      <section class="contact-info">
-        <h3>CONTACT</h3>
-        <ul class="contact-list">
-          <li>
-            <i class="fas fa-home mr-3"></i> Topfstrasse 145 <br />
-             <span>Berlin 13867</span>
-          </li>
-          <li>
-            <i class="fas fa-envelope mr-3"></i
-            ><a class="email" href="mailto:info@recipe-box.com">info@recipe-box.com</a>
-          </li>
-          <li><i class="fas fa-phone mr-3"></i> + (49) 153 42676897</li>
-        </ul>
-      </section> 
-       <section class="copyright">
-        © 2023 Copyright <br>
-        <a class="text-white" href="https://TheReceipeBox.com/">TheReceipeBox.com</a>
-      </section>
-      <section class="socials">
-        <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-facebook-f"></i></a>
-        <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-twitter"></i></a>
-        <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-google"></i></a>
-        <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-instagram"></i></a>
-      </section>
-    </div>
-  </footer> 
+    
+    <footer id="footer-main">
+      <div class="footer-container">
+        <section class="comp-logo">
+          <h3>THE RECIPE BOX</h3>
+          <img class="logo-footer" src="../image/logo.png" alt="logo" />
+        </section>
+        <section class="links">
+          <h3>USEFUL LINKS</h3>
+          <ul class="page-links">
+            <a href="./index.html">Home</a>
+            <br />
+            <a href="./recipes.html">Recipes</a>
+            <br />
+            <a href="./competition.html">Competiton</a>
+            <br />
+            <a href="./about.html">About</a>
+            <br />
+            <a href="./contacts.html">Contact</a>
+          </ul>
+        </section>
+        <section class="contact-info">
+          <h3>CONTACT</h3>
+          <ul class="contact-list">
+            <li>
+              <i class="fas fa-home mr-3"></i> Topfstrasse 145 <br />
+               <span>Berlin 13867</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope mr-3"></i
+              ><a class="email" href="mailto:info@recipe-box.com">info@recipe-box.com</a>
+            </li>
+            <li><i class="fas fa-phone mr-3"></i> + (49) 153 42676897</li>
+          </ul>
+        </section>
+         <section class="copyright">
+          © 2023 Copyright <br>
+          <a class="text-white" href="https://TheReceipeBox.com/">TheReceipeBox.com</a>
+        </section>
+        <section class="socials">
+          <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-google"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-instagram"></i></a>
+        </section>
+      </div>
+    </footer>
   <script>
     function openForm() {
       document.getElementById("myForm").style.display = "block";
