@@ -66,6 +66,7 @@
 
 .card-header {
     color: rgb(212, 74, 19);
+    text-align: center;
 }
 
 h2{
@@ -87,7 +88,7 @@ h2{
     position: fixed;
     bottom: 15px;
     right: 20px;
-    width: 280px;
+    width: 240px;
   }
   
   .chat-popup {
@@ -173,6 +174,8 @@ h2{
         height: 350px;
         width: 350px;
     }
+
+   
 }
 
   
@@ -181,10 +184,14 @@ h2{
         height: 280px;
         width: 280px;
     }
+
+    .card-text {
+      font-size:small;
+    }
+
+    .open-button {
+      width: 120px;
+     }
+    
 }
 
-// @media (max-width:300px) {
-//      {
-//         height:580px ;
-//     }
-// }
