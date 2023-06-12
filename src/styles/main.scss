@@ -196,32 +196,52 @@ main {
   justify-content: space-around;
   max-width: 1440px;
   margin: auto;
+  height: 50vh;
+  gap: 10px;
+  padding: 1rem;
 }
 
 .card {
   width: auto;
-  height: 500px;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  background-color: #ffffff6b;
+  padding: 40px 20px;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   max-width: 400px;
   margin-bottom: 60px;
+  cursor: pointer;
+  transition: 0.6s;
+  flex: 1;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-15px);
 }
 
 img {
-  width: 60%;
+  width: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  margin-top: -80px;
-  margin-left: 70px;
+}
+
+.card img {
+  position: absolute;
+  width: 200px;
+  top: -100px;
+  right: 0px;
 }
 
 h2 {
   display: flex;
-  padding: 40px;
   justify-content: center;
+  align-items: flex-start;
   color: #764b36;
+  font-weight: 500;
+  font-size: 2.5em;
+  margin-bottom: 150px;
+  margin-top: 20px;
 }
 
 .card h3 {
@@ -229,20 +249,22 @@ h2 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 1em;
   color: #555;
 }
 
 .main-banner {
   background-color: #e7d8ce;
   background-image: url(../../image/food.jpg);
-  min-height: 50vh;
+  min-height: 20vh;
+  width: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
 
 .banner-content {
@@ -467,13 +489,13 @@ b {
     z-index: 2;
   }
 
-  .recipe-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-  }
+  // .recipe-container {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-wrap: wrap;
+  //   margin-bottom: 50px;
+  // }
 
   .contest-poster {
     padding-top: 15px;
@@ -487,6 +509,39 @@ b {
   .contest-poster {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .card img {
+    position: absolute;
+    width: 160px;
+    top: -80px;
+  }
+}
+
+@media (max-width: 960px) {
+  .recipe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 100px;
+    height: auto;
+    align-items: initial;
+  }
+
+  .card img {
+    position: absolute;
+    width: 180px;
+    top: -90px;
+    right: 0px;
+  }
+
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 80px;
   }
 }
 
@@ -509,11 +564,16 @@ b {
   }
 
   .recipe-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     margin-bottom: 50px;
+    max-width: 300px;
+    gap: 50px;
+  }
+  .card h3 {
+    color: #764b36;
+  }
+  .card img {
+    width: 120px;
+    top: -50px;
   }
   .contest-poster {
     padding-top: 10px;
@@ -536,6 +596,65 @@ b {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .banner-content {
+    text-align: center;
+  }
+
+  .banner-content h1 {
+    margin-top: 100px;
+  }
+
+  .footer-container {
+    justify-content: space-around;
+  }
+
+  .logo-footer {
+    width: 130px;
+  }
+
+  .open-button {
+    width: 120px;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: -50px;
+    height: 30px;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .flip-card-back {
+    background-color: #9b4922;
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
   }
 
   .banner-content {
