@@ -7,30 +7,29 @@
     <title>Our Contacts</title>
 
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous"
-  />
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-/>
-<link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-  integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-  crossorigin="anonymous"
-/>
-<link
-  href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
-  rel="stylesheet"
-/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./styles/contacts.scss" />
     <link rel="stylesheet" href="./styles/main.scss" />
-
   </head>
   <body>
     <header>
@@ -91,18 +90,20 @@
       </section>
       <button class="open-button" onclick="openForm()">
         Chat to one of our team
-        <i class="fa-solid fa-comments" style="color: #FFFFFF"></i>
+        <i class="fa-solid fa-comments" style="color: #ffffff"></i>
       </button>
 
       <div class="chat-popup" id="myForm">
         <form action="/action_page.php" class="form-container">
           <h1 class="chat-head">Chat</h1>
-      
+
           <label for="msg"><b>How can we help you?</b></label>
           <textarea placeholder="Type message.." name="msg" required></textarea>
-      
+
           <button type="submit" class="btn">Send</button>
-          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">
+            Close
+          </button>
         </form>
       </div>
     </main>
@@ -159,7 +160,10 @@
           <a class="btn btn-outline-light btn-floating m-1" role="button"
             ><i class="fab fa-google"></i
           ></a>
-          <a class="btn btn-outline-light btn-floating m-1" role="button"
+          <a
+            href="https://www.instagram.com/recipebox2023/?igshid=MjEwN2IyYWYwYw%3D%3D"
+            class="btn btn-outline-light btn-floating m-1"
+            role="button"
             ><i class="fab fa-instagram"></i
           ></a>
         </section>
@@ -170,11 +174,11 @@
       function openForm() {
         document.getElementById("myForm").style.display = "block";
       }
-      
+
       function closeForm() {
         document.getElementById("myForm").style.display = "none";
       }
-      </script>
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
